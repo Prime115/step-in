@@ -774,14 +774,14 @@ footer{
     width: 9.5vw;
     height: 2.8vw;
     font-size: 1.5vw;
-    font-family: Roboto Condensed;
+    font-family: Roboto Condensed, sans-serif;
     box-shadow: 0 0.1vw 0.2vw #293844;
 }
 .gymheader {
     grid-area: a;
     grid-column: span 2;
     color: #ED8606;
-    font-family: Roboto Condensed;
+    font-family: Roboto Condensed, sans-serif;
     font-weight: 600;
     font-size: 2.5vw;
     align-self: center;
