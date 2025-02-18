@@ -2306,7 +2306,7 @@ body#bli-medlem #sida2{
     }
     body#bli-medlem #sida2{
 
-        height:300vw;
+        height:348vw;
     }
     .blackfade{
 
@@ -2318,7 +2318,7 @@ body#bli-medlem #sida2{
     }
 
     .del1{
-        height: 135vw;
+        height: 150vw;
 
         border-bottom: 0.01vw dashed rgba(240, 240, 240, 1);
     }
@@ -2395,7 +2395,7 @@ body#bli-medlem #sida2{
         border: 0.01vw solid #ffffff;
     }
     .del2{
-        height: 47vw;
+        height: 196vw;
     }
     .del2-grid{
         display: grid;
@@ -2407,37 +2407,30 @@ body#bli-medlem #sida2{
         height: 100%;
     }
     .del2-grid h2{
-        font-size: 2.5vw;
-        font-family: Roboto;
-        font-weight: 600;
-        margin-bottom: 3vw;
-        color: #ED8606;
-        padding-left: 6vw;
-        padding-top: 6vw;
+        font-size: 6vw;
+        margin:0;
+        align-self: center;
+        padding:0;
+        justify-self: center;
         grid-area: a;
 
     }
     #abonnemang {
-        grid-area: b;
-        overflow-x:auto ;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        scrollbar-color: #171717 transparent;
+       justify-self: center;
+        width: 80vw;
+        align-items: center;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+
     }
 
     .abonnemangcard{
-
-        height: 90%;
-        width: 19.04vw;
-        background-color: #1E1E1E;
-        border: 0.1vw solid #ED8606;
-        flex-shrink: 0;
-        margin:0 1vw;
-
-
+        height: 75%;
+        width: 72vw;
+        border: 0.1vw ridge #ED8606;
+        margin:0 1.5vw;
+        scroll-snap-align: center; /* Snäppscrollar på varje kort */
 
     }
     .abonnemanggrid{
@@ -2450,33 +2443,20 @@ body#bli-medlem #sida2{
         height: 100%;
         width: 100%;
     }
-    .abonnemanggrid img{
-        grid-area: a;
-        height: 100%;
-        width: 100%;
-
-    }
     .abonnemangtext {
-        grid-area: b;
-        display: flex;
-        flex-direction: row;
-        height: 100%;
-        width: 100%;
+        justify-content:space-around;
     }
+
     .abonnemangtext h5{
 
         font-weight: 800;
-        font-size: 1.2vw;
-        padding-left: 1.2vw;
-        margin-top: 1vw;
+        font-size: 4vw;
+        padding:0;
+        margin-top: 3vw;
     }
     .pris {
-        font-weight: bold;
-        font-size: 1.9vw;
-        color: #ED8606;
-        justify-self: flex-end;
-        align-self: flex-end;
-        margin-bottom: 0;
+        font-size: 7vw;
+
     }
 
     .väljabonnemang {
@@ -2488,18 +2468,18 @@ body#bli-medlem #sida2{
         display: flex;
     }
     .väljabonnemang button{
-        background-color: transparent;
-        width: 90%;
-        color: #ED8606;
-        text-transform: uppercase;
-        font-size: 1.5vw;
-        font-weight: 500;
+        width: 65%;
+        font-size: 5vw;
     }
     .väljabonnemang button:hover{
-        border-color: rgba(255, 255, 255, 0.5);
+        border:none;
     }
     .väljabonnemang button:focus{
-        border-color: rgba(255, 255, 255, 0.5);
+        border-color: rgba(255, 255, 255, 1);
+        background-color: #ed8606;
+        color: #293844;
+
+
     }
 
 
