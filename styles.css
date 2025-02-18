@@ -1678,16 +1678,17 @@ body#bli-medlem #sida2{
         border-radius: 0;
     }
     .items {
-
+        display: flex;
+        flex-direction: column;
         top:1vw;
         position: relative;
         left:0;
         justify-content: center;
+        align-items: center;
     }
     .items h2 {
         margin-bottom:0;
         font-size: 8.2vw;
-        justify-self: center ;
         margin-top:6.8vw;
 
     }
@@ -1711,7 +1712,7 @@ body#bli-medlem #sida2{
         width: 100%;
     }
     .items a{
-        padding-left: 29.65vw;
+        padding-left: 0;
     }
     .aboutAPP {
 
