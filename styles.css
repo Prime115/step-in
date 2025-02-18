@@ -1641,7 +1641,7 @@ body#bli-medlem #sida2{
     .cards a{
         text-decoration: none;
         text-transform: uppercase;
-        font-family: Roboto Condensed;
+        font-family: Roboto Condensed, sans-serif;
         height:100%;
         width:100%;
 
@@ -1652,13 +1652,18 @@ body#bli-medlem #sida2{
     }
 
     .cards p {
-        font-family: Roboto ;
+        font-family: Roboto ,sans-serif;
         font-weight: 700;
         font-size: 3.34vw;
-
         padding-top: 82vw;
         text-align:left;
 
+
+
+
+    }
+    .cards p br{
+        display: block;
     }
 
 
