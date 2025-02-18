@@ -47,7 +47,7 @@ h2 {
 }
 .navboard:hover  {
     background-color: rgba(30, 30, 30, 0.8);
-    filter: drop-shadow( #000000 0vw 0vw 0.41vw);
+    filter: drop-shadow( 0vw 0vw 0.41vw #000000);
     filter: shadow() ;
     filter: blur(2);
 
@@ -246,7 +246,6 @@ body#home .herotext {
     "a b c"
     ". . .";
     grid-template-rows: 0.2fr 1fr 0.2fr;
-    grid-template-columns: repeat(3, 1 fr) ;
     height: 45.7vw;
 
     justify-content: center;
@@ -447,7 +446,7 @@ body#home .herotext {
 #circle6 {
     grid-area: f;
 }
-#symbol {
+.symbol {
     font-size: 3vw;
     font-weight: 0;
 
@@ -569,15 +568,15 @@ footer{
     width: 7vw;
 }
 
-#fb {
+.fb {
     font-size: 3vw;
     padding-top: 0.2vw;
     font-weight: 400;
 }
-#ig{
+.ig{
     font-size: 3.5vw;
 }
-#APP {
+.APP {
     color: #ED8606;
 }
 
@@ -745,7 +744,6 @@ footer{
     width:100%;
     height: 60%;
     overflow-y: auto;
-    scrollbar-width: 2.5vw;
     scrollbar-color: #f0f0f0 #d9d9d9;
 }
 
@@ -765,7 +763,7 @@ footer{
     grid-template-rows: 5vw;
 
 }
-#cardinfo{
+.cardinfo{
    display:contents;
 }
 .gym:active{
@@ -774,14 +772,14 @@ footer{
 .gym:active #bemanningstider {
     border-color: #ffffff;
 }
-#läsmer {
+.läsmer {
     grid-area: c;
     padding-right: 1.1vw;
     justify-self: end;
     padding-top: 1vw;
 
 }
-#läsmer button {
+.läsmer button {
     width: 9.5vw;
     height: 2.8vw;
     font-size: 1.5vw;
@@ -818,16 +816,16 @@ footer{
     margin-top: 0.5vw;
 
 }
-#adress{
+.adress{
     grid-area: d;
     padding-left: 1.6vw;
 }
-#E-post {
+.E-post {
     grid-area: d;
     padding-left: 1.6vw;
     padding-top: 4.5vw;
 }
-#bemanningstider {
+.bemanningstider {
 
     grid-area: e;
     justify-self:center;
@@ -875,16 +873,16 @@ footer{
     color: #293844;
     font-size: 2vw;
 }
-#klocka {
+.klocka {
     grid-area: a;
 }
-#hantel{
+.hantel{
     grid-area: b;
 }
-#parkering{
+.parkering{
     grid-area: c;
 }
-#gruppträning{
+.gruppträning{
     grid-area: d;
 }
 #Bodenarena .symbolcontainer{
@@ -930,13 +928,13 @@ footer{
 }
 
 
-#utegym {
+.utegym {
     grid-area: e;
 }
-#padel {
+.padel {
     grid-area: f;
 }
-#sjukgymnast{
+.sjukgymnast{
     grid-area:e;
 }
 #map{
@@ -992,25 +990,25 @@ body.thegyms #hero{
     grid-area: b;
 
 }
-.heroinfo #e-post #container{
+.heroinfo #e-post .container{
     justify-items: start;
     justify-self: center;
 }
-.heroinfo #e-post #container h4{
+.heroinfo #e-post .container h4{
     white-space: nowrap;
     width:25%;
 
 }
 .heroinfo #bemanningstider {
     grid-area: c;
-    padding: 0vw;
+    padding: 0;
     border:none;
     justify-self: end;
 }
-.heroinfo #bemanningstider #container {
+.heroinfo #bemanningstider .container {
     justify-items:start;
 }
-.heroinfo #bemanningstider #container h4{
+.heroinfo #bemanningstider .container h4{
     width: 53%;
 }
 .tabell-tider{
@@ -1020,7 +1018,7 @@ body.thegyms #hero{
 
 
 }
-.tabell-tider #dagar {
+.tabell-tider .dagar {
     padding-right: 4.7vw;
 }
 
@@ -1369,7 +1367,7 @@ body#bli-medlem #sida2{
     }
     .navboard:hover  {
         background-color: rgba(30, 30, 30, 0.8);
-        filter: drop-shadow( #000000 0vw 0vw 0.41vw);
+        filter: drop-shadow( 0vw 0vw 0.41vw #000000);
         filter: shadow() ;
         filter: blur(2);
 
@@ -1744,7 +1742,7 @@ body#bli-medlem #sida2{
         left: 0.8vw;
 
     }
-    #symbol {
+    .symbol {
         font-size: 10vw;
         font-weight: 100;
     }
@@ -1985,7 +1983,6 @@ body#bli-medlem #sida2{
         width:100%;
         height: 90%;
         overflow-y: auto;
-        scrollbar-width: 2.5vw;
         scrollbar-color: #f0f0f0 #d9d9d9;
     }
 
@@ -2029,7 +2026,7 @@ body#bli-medlem #sida2{
         border-radius: 2.5vw;
         font-weight: 600;
     }
-    #cardinfo{
+    .cardinfo{
         grid-area: c;
         display: grid;
         grid-template-areas: "a b c";
@@ -2061,16 +2058,16 @@ body#bli-medlem #sida2{
         white-space: pre-line;
 
     }
-    #adress{
+    .adress{
         grid-area: b;
         padding-left: 1.6vw;
     }
-    #E-post {
+    .E-post {
         grid-area: a;
         padding-left: 1.6vw;
         padding-top: 0;
     }
-    #bemanningstider {
+    .bemanningstider {
 
         grid-area: c;
         justify-self:center;
@@ -2119,16 +2116,16 @@ body#bli-medlem #sida2{
         color: #293844;
         font-size: 5vw;
     }
-    #klocka {
+    .klocka {
         grid-area: a;
     }
-    #hantel{
+    .hantel{
         grid-area: b;
     }
-    #parkering{
+    .parkering{
         grid-area: c;
     }
-    #gruppträning{
+    .gruppträning{
         grid-area: d;
     }
     #Bodenarena .symbolcontainer{
@@ -2197,7 +2194,7 @@ body#bli-medlem #sida2{
     }
     .thegyms #hero .HeaderText{
 
-        margin-bottom: 0vw;
+        margin-bottom: 0;
         font-size: 11vw;
     }
     .heroinfo {
@@ -2220,35 +2217,35 @@ body#bli-medlem #sida2{
     .heroinfo p {
         font-size: 4.1vw;
         font-weight: 500;
-        font-family: Roboto;
+        font-family: Roboto, serif;
     }
-    .heroinfo #adress {
+    .heroinfo .adress {
         grid-area: a;
         padding-left: 10vw;
 
     }
-    .heroinfo #e-post{
+    .heroinfo .e-post{
         grid-area: b;
         padding-left: 10vw;
 
     }
-    .heroinfo #e-post #container{
+    .heroinfo .e-post .container{
         justify-items: start;
         justify-self: left;
     }
-    .heroinfo #bemanningstider {
+    .heroinfo .bemanningstider {
         padding: 0 0 10VW 10vw;
         justify-self: left;
 
     }
 
-    .heroinfo #bemanningstider #container {
+    .heroinfo .bemanningstider .container {
         justify-items:start;
     }
     .tabell-tider{
         font-size: 4.1vw;
     }
-    .tabell-tider #dagar {
+    .tabell-tider .dagar {
         padding-right: 4.7vw;
     }
 
