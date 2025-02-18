@@ -1936,6 +1936,7 @@ body#bli-medlem #sida2{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        grid-area: a
     }
 
 
@@ -2179,9 +2180,11 @@ body#bli-medlem #sida2{
     #map{
         grid-area: a;
         height: 100vw;
-
+        display: grid;
+        grid-template-areas:"a""b"
     }
     .map{
+        grid-area: b;
         height: 71.8vw;
 
     }
