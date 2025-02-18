@@ -1304,11 +1304,15 @@ body#bli-medlem #sida2{
     font-weight: 500;
 }
 .väljabonnemang button:hover{
-    border-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 1);
 }
-.väljabonnemang button:focus{
-    border-color: rgba(255, 255, 255, 0.5);
-}
+
+    .väljabonnemang button:focus{
+        border-color: rgba(255, 255, 255, 1);
+        background-color: #ed8606;
+        color: #293844;
+
+    }
 
 /* för mobil*/
 @media (max-width: 500px ){
@@ -1332,12 +1336,14 @@ body#bli-medlem #sida2{
         align-content: center;
         display: grid;
         grid-template-areas: " a b c";
+        grid-template-columns: 0.3fr 1fr 0.3fr;
+        justify-items: center;
 
     }
     .lock{
         display:block;
         align-content: center;
-        padding-left: 3vw;
+        padding: 0;
 
 
     }
@@ -1350,7 +1356,7 @@ body#bli-medlem #sida2{
         display:block;
         background: none;
         font-size:9vw;
-        padding-right:3vw;
+        padding:0;
     }
 
     .Navlist{
