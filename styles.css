@@ -1582,9 +1582,6 @@ body#bli-medlem #sida2{
         justify-content: center;
 
         padding:0;
-
-
-
     }
     .card{
         transition: all 0.3s ease-in-out;
@@ -1729,9 +1726,6 @@ body#bli-medlem #sida2{
     }
     .about {
         font-size: 2vw;
-        justify-items: center;
-
-        padding-top:0;
     }
     .circle {
         height: 16.56vw;
