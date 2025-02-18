@@ -1704,7 +1704,7 @@ body#bli-medlem #sida2{
 
         position: relative;
         z-index: 0;
-        height:auto; width: 100%; top: 5vw; left:0;
+        height:auto; width: 100%; top: -3vw; left:0;
     }
     #appimage img {
         height: 70vw;
@@ -1715,17 +1715,20 @@ body#bli-medlem #sida2{
     }
     .aboutAPP {
 
-        grid-template-rows: 16.56vw 16.56vw ;
+        grid-template-rows:none;
         height: 100vw;
         width: 60vw;
         top: 5vw;
         left: 20vw;
-        row-gap: 7vw;
+        row-gap: 2vw;
 
 
     }
     .about {
         font-size: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .circle {
         height: 16.56vw;
@@ -1736,8 +1739,8 @@ body#bli-medlem #sida2{
     }
 
     #text1 {
-        position: absolute;
-        left: 0.8vw;
+        position: relative;
+        left: 0;
 
     }
     .symbol {
