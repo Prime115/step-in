@@ -393,7 +393,7 @@ body#home .herotext {
             "d e f";
 
     grid-template-rows: 7vw 7vw ;
-    height: 100vw;
+    height: 50vw;
     width: 22vw;
     position: relative  ;
     top: 5vw;
