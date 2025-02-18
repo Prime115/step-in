@@ -1722,8 +1722,9 @@ body#bli-medlem #sida2{
         height: 50vw;
         width: 60vw;
         top: 5vw;
-        left: 20vw;
+        left: 0;
         row-gap: 2vw;
+        align-self: center;
 
 
     }
