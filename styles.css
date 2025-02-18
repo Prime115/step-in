@@ -1330,6 +1330,8 @@ body#bli-medlem #sida2{
     .navboard {
         height: 100%;
         align-content: center;
+        display: grid;
+        grid-template-areas: " a b c";
 
     }
     .lock{
