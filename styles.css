@@ -699,7 +699,7 @@ footer{
 #våragym-sida2 {
     height:101.2vw;
 }
-.computer-searchgym{
+.mobile-searchgym{
     display:none;
 }
 
@@ -1928,12 +1928,13 @@ body#bli-medlem #sida2{
     #våragym-sida2 {
         height:200vw;
     }
-    .mobile-searchgym{
+    .computer-searchgym{
         display: none;
     }
-    .computer-searchgym{
-        display:inline-block;
-        justify-items: center;
+    .mobile-searchgym{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 
@@ -1959,7 +1960,7 @@ body#bli-medlem #sida2{
 
     }
 
-    .computer-searchgym h2 {
+    .mobile-searchgym h2 {
 
         color: #293844;
         font-family: Roboto Condensed;
@@ -1967,7 +1968,7 @@ body#bli-medlem #sida2{
         font-size: 5.5vw;
 
     }
-    .computer-searchgym input {
+    .mobile-searchgym input {
         height: 9vw;
         border: solid 0.05vw #293844;
         padding:0vw;
