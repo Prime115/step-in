@@ -2023,11 +2023,10 @@ body#bli-medlem #sida2{
 
     }
     .läsmer button {
-
         width: 60.7vw;
         height: 9.2vw;
         font-size: 5vw;
-        font-family: Roboto Condensed;
+        font-family: Roboto Condensed, sans-serif;
         border-radius: 2.5vw;
         font-weight: 600;
     }
