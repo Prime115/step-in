@@ -1,0 +1,2302 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
+header{
+    position: fixed;
+    height: 5.46vw;
+    width:100%;
+    background: transparent;
+    z-index: 1000;
+    top:0;
+}
+.navboard {
+
+
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s;
+
+
+}
+* {
+    color: white;
+
+
+}
+.lock{
+    display:none;
+}
+.hamburger {
+    cursor:none;
+    display: none;
+    font-size: 5vw;
+    border: none;
+    color:white;
+}
+
+h2 {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 2.85vw;
+}
+.navboard:hover  {
+    background-color: rgba(30, 30, 30, 0.8);
+    filter: drop-shadow( #000000 0vw 0vw 0.41vw);
+    filter: shadow() ;
+    filter: blur(2);
+
+
+}
+.navboard button {
+    transition: all 0.3s;
+}
+.navboard #logo{
+    transition: all 0.3s;
+}
+.navboard:hover button {
+    background-color: #ED8606;
+}
+
+.navboard:hover #logo {
+filter:none;
+}
+.Navlist a:hover {
+
+    color: #ED8606;
+}
+
+ #logo {
+    padding-left: 1.17vw;
+     padding-top: 0.39vw;
+     filter: grayscale(1);
+}
+ #logo img {
+     height:4.68vw;
+ }
+
+
+.Navlist a {
+    Font-family: Montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    text-decoration: none;
+    font-size: 1.09vw;
+    transition: all 0.3s;
+
+}
+.Navlist ul{
+    margin-top:1.25vw;
+    margin-bottom: 1.25vw;
+}
+.Navlist li {
+    display: inline-block;
+    padding: 0vw 1.4vw;
+
+}
+
+#hero video {
+    position: absolute;
+
+    height: 45.73vw;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+
+}
+body#anderstorp #hero{
+    background-image: url('./images/anderstorp.jpg');
+    background-size: cover;
+    background-position: center;
+}
+body#träna #hero{
+    background-image: url('./images/Träna.jpg');
+    background-size: cover;
+    background-position-y: 40%;
+}
+body#våra-gym #hero{
+    background-image: url('./images/våragym2.jpg');
+    background-size: cover;
+    background-position-y: 60%;
+}
+.heroimage {
+
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+.dimoverlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+
+.shadow {
+    box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.3);
+
+}
+
+
+.herotext{
+    z-index: 500;
+    position: relative;
+    margin-top: 0;
+    top:10vw;
+
+}
+
+.HeaderText {
+     font-family: Roboto Condensed;
+     font-weight: 800;
+     font-size: 4.16vw;
+     margin-left: 9.897vw;
+     text-transform: uppercase;
+     margin-top:0;
+
+ }
+.orangeButton {
+    background-color: #ED8606;
+    width: 13.3vw;
+    height:2.97vw;
+    position: relative;
+    border-radius: 2.3vw;
+    border-radius:2.3vw;
+    border-color: #ed8606;
+    border-style: solid;
+    border-width: thin;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1.09vw;
+    transition:all 0.3s ease-in-out, color 0.3s ease-in-out;
+
+}
+
+a .orangeButton:hover {
+    transform: scale(1.05);
+    border: 0.01vw solid #ffffff;
+
+}
+button:hover {
+    transform: scale(1.05);
+    border: 0.01vw solid #ffffff;
+}
+.herotext a{
+    padding-left: 9.88vw;
+}
+
+.Navlist .orangeButton {
+    background: transparent;
+    border-radius:2.34vw;
+    border-color: #D67505;
+    border-style: solid;
+    border-width: thin;
+    height:2.94vw;
+    width: 10.6vw;
+    font-family: Montserrat;
+    font-weight: 600;
+
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+}
+
+#hero {
+    height:22.85vw;
+    position: relative;
+    width: 100%;
+
+}
+body#home #hero {
+    height:45.73vw;
+}
+body#home .herotext {
+    top:20vw;
+}
+
+#sida2{
+    width: 100%;
+    height: 52vw;
+    align-items: center;
+
+}
+.BlueHeaders {
+    color: #293844;
+    text-transform: uppercase;
+    margin-bottom: 0vw;
+    text-align: center;
+    width: 40%;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-areas:
+    ". . ."
+    "a b c"
+    ". . .";
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-columns: repeat(3, 1 fr) ;
+    height: 45.7vw;
+
+    justify-content: center;
+    gap: 2.9vw;
+    padding:0;
+
+
+
+}
+.card{
+    transition: all 0.3s ease-in-out;
+    border-radius: 1.56vw;
+}
+.card img{
+    height:100%;
+    width:27.26vw;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.5);
+
+}
+#card1 {
+    grid-area: a;
+    height: 38.36vw;
+
+}
+
+#card2 {
+    grid-area: b;
+    height: 38.36vw;
+
+}
+
+#card3 {
+    grid-area: c;
+    height: 38.36vw;
+}
+
+
+
+.cards li{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+.cardText {
+    top:0.39vw;
+    position: absolute;
+
+    padding-left: 1.56vw;
+    justify-content: space-between;
+
+}
+.cards a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Roboto Condensed;
+    height:37.73vw;
+    width:27.26vw;
+
+
+
+
+}
+.cards h3 {
+    font-size: 2.48vw;
+    font-weight: 600;
+}
+
+.cards p {
+    font-family: Roboto ;
+    font-weight: 700;
+    font-size: 1.227vw;
+
+    padding-top: 24.8vw;
+    text-align:left;
+
+}
+
+
+.cards img {
+    border-radius: 1.56vw;
+    filter: brightness(0.6);
+
+}
+#sida3 {
+    height: 63vw;
+
+}
+.goActive {
+    background-color: #293844;
+    margin:7.8vw 5vw;
+
+    height:50.4vw;
+    border-radius: 1.56vw;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+.items {
+
+    top:3vw;
+    position: relative;
+    left: 3.96vw;
+}
+.items h2 {
+    margin-bottom: 0vw;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+
+}
+.items p {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1.25vw;
+    text-align: left;
+    margin-bottom: 4vw;
+    white-space: pre-line;
+}
+#appimage {
+
+    position: relative;
+    z-index: 0;
+
+    height:55.4vw; width: 65vw; top: -29vw; left: 24vw;
+}
+#appimage img {
+    object-position: right ;
+    object-fit:cover;
+    height: 55.4vw;
+    width: 100%;
+}
+.aboutAPP {
+    display:grid;
+    grid-template-areas:
+            "a b c"
+            "d e f";
+
+    grid-template-rows: 7vw 7vw ;
+    height: 100vw;
+    width: 22vw;
+    position: relative  ;
+    top: 5vw;
+    left: 2vw;
+    justify-items: center;
+    row-gap: 1vw;
+
+
+}
+.about {
+    font-size: 0.6vw;
+    font-family: Montserrat;
+    font-weight: bold;
+    justify-items: center;
+
+    padding-top: 0vw;
+}
+.circle {
+    height: 4.96vw;
+    width: 4.96vw;
+    background-color: #293844;
+    border-radius: 50%;
+    box-shadow: 0vw 0vw 0.5vw rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#text1 {
+    position: absolute;
+    left: 0.8vw;
+
+}
+#circle1 {
+    grid-area: a;
+}
+#circle2 {
+    grid-area: b;
+}
+#circle3 {
+    grid-area: c;
+}
+#circle4 {
+    grid-area: d;
+}
+#circle5 {
+    grid-area: e;
+}
+#circle6 {
+    grid-area: f;
+}
+#symbol {
+    font-size: 3vw;
+    font-weight: 0;
+
+
+}
+
+#sida4 {
+    height: 27vw;
+}
+.kontaktaOss{
+    display: grid;
+    grid-template-areas:
+    "a b d c";
+    grid-template-columns: 0.5fr 0.9fr 0.5fr 0.2fr;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    background-color: #F0F0F0;
+
+}
+.kontaktaOss h4{
+    font-weight: 400;
+    color: #293844;
+    margin-left: 3.5vw;
+    font-size: 1.425vw
+
+}
+.kontaktaOss h1{
+    color: #293844;
+    font-weight: 800;
+    text-decoration-line: underline;
+    text-decoration-color: #ED8606;
+    text-underline-offset: 0.5vw;
+    text-decoration-thickness: 0.2vw;
+    font-size: 4.68vw;
+    margin-left: 3.3vw;
+
+}
+.kontaktaOss span{
+    color: #293844;
+    width:2vw;
+    font-size: 2vw;
+
+
+
+
+}
+.kontaktaOss a{
+    grid-area: c;
+}
+.kontaktaOss .orangeButton{
+    background-color: #ED8606;
+    height:6vw;
+    width: 6vw;
+    border-radius: 50%;
+    margin-left: 2vw;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+footer{
+    height:23.2vw;
+}
+.footer {
+    background-color: #1E1E1E;
+    Font-family: Montserrat;
+    display: grid;
+    grid-template-areas:
+    "a b c d";
+    grid-template-columns: 0.38fr 0.35fr 0.35fr 0.5fr;
+    border-top: solid 0.5vw #ED8606;
+
+}
+.footer img {
+    height :5.2vw;
+    grid-area:a;
+     padding: 1.5vw 0vw 0vw 2.2vw
+}
+.footer ul{
+    font-size:1.2vw;
+    font-family: Roboto;
+    font-weight: 300;
+    list-style-type: none;
+}
+.footer li{
+    margin-bottom: 1.5vw;
+}
+.footer li h4{
+    font-weight: bold;
+    font-size:1.51vw;
+    margin-bottom: 0vw;
+    font-family: Montserrat;
+}
+#list1 {
+    grid-area: b;
+
+
+}
+
+
+#list2 {
+    grid-area: c;
+    padding-left:6.7vw;
+}
+#list3 {
+    grid-area: d;
+
+}
+#list3 li{
+    padding-left:1.1vw;
+
+}
+.socials{
+    justify-content: space-between;
+    display: flex;
+    width: 7vw;
+}
+
+#fb {
+    font-size: 3vw;
+    padding-top: 0.2vw;
+    font-weight: 400;
+}
+#ig{
+    font-size: 3.5vw;
+}
+#APP {
+    color: #ED8606;
+}
+
+#tränasida2 {
+    height: 169vw;
+}
+.träningsformer {
+    display: grid;
+    grid-template-areas: ". a b .";
+    grid-template-columns: 4.11vw 45.9vw 45.9vw 4.11vw ;
+    height: 27.97vw;
+    padding-top: 6vw;
+
+}
+@media (min-width: 501px){
+
+    .träningsformer:nth-child(odd) {
+        grid-template-areas: ". a b .";
+    }
+    .träningsformer:nth-child(odd) .träningstext {
+        justify-self: start;
+    }
+    .träningsformer:nth-child(odd) .träningsbild {
+        justify-self: end;
+    }
+
+    .träningsformer:nth-child(even) {
+        grid-template-areas: ". b a .";
+    }
+    .träningsformer:nth-child(even) .träningstext{
+        justify-self: end;
+    }
+    .träningsformer:nth-child(even) .träningsbild {
+        justify-self: start;
+    }
+}
+
+
+.träningsbild {
+    grid-area: b;
+    height: 27.97vw;
+    width: 41.98vw;
+    display: flex;
+
+}
+.träningsbild img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter:drop-shadow(0vw 0.3vw 0.3vw rgba(0, 0, 0, 0.5));
+}
+.träningstext {
+    grid-area: a;
+
+    display: flex;
+    flex-direction: column;
+}
+.träningstext h2 {
+    margin: 0vw;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    color:#293844;
+    font-family: Roboto Condensed;
+    font-weight: 600;
+}
+.träningstext h3 {
+    color:#D67505;
+    font-family: Roboto Condensed;
+    font-size: 2.08vw;
+    font-weight: 500;
+    margin-top:0.7vw;
+}
+.träningstext p {
+    color: #293844;
+    font-family: Roboto;
+    font-size: 1.25vw;
+    font-weight: 400;
+    margin-bottom:4vw;
+}
+#gym-träna.träningsformer .träningstext h2,
+#gym-träna.träningsformer .träningstext h3,
+#gym-träna.träningsformer .träningstext p{
+
+    margin-right:0.8vw;
+}
+#träna-online-träna.träningsformer .träningstext h2,
+#träna-online-träna.träningsformer .träningstext h3,
+#träna-online-träna.träningsformer .träningstext p{
+    margin-right:1.9vw;
+}
+
+
+
+.anläggningar-pil{
+    display: flex;
+    flex-direction:row;
+
+}
+
+.anläggningar-pil a {
+    color: #293844;
+    font-family: Roboto;
+    font-size: 1.67vw;
+    font-weight: 600;
+    text-decoration-thickness: 4.88%;
+    text-underline-offset: 0.15vw;
+
+
+
+}
+.anläggningar-pil span{
+    color: #293844;
+    font-weight: 900;
+    font-size: 2vw;
+    margin-left: auto;
+
+
+}
+#våragym-sida2 {
+    height:101.2vw;
+}
+.computer-searchgym{
+    display:none;
+}
+
+.gymcontainer{
+    display: grid ;
+    grid-template-areas: ". a b .";
+    grid-template-columns: 5.4vw 44.6vw 44.6vw 5.4vw;
+    height: 60%;
+    margin-top: 0;
+}
+#search {
+    grid-area: a;
+    margin-top: 5vw;
+}
+.searchcontainer{
+    width: 40.8vw;
+    height: 42vw;
+
+}
+.searchcontainer h2 {
+
+    color: #293844;
+    font-family: Roboto Condensed;
+    font-weight: 600;
+    font-size: 2.5vw;
+
+}
+.searchcontainer input {
+    width:100%;
+    height: 3.6vw;
+    border:solid 0.1vw #293844;
+    padding:0vw;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size:1.25vw;
+    color:#293844;
+    padding-left: 1vw;
+
+}
+.allgyms {
+    margin-top: 3.4vw;
+    width:100%;
+    height: 60%;
+    overflow-y: auto;
+    scrollbar-width: 2.5vw;
+    scrollbar-color: #f0f0f0 #d9d9d9;
+}
+
+.gym{
+
+    width: 97.5%;
+    height: 15.3vw;
+    background-color: #ffffff;
+    margin-bottom: 1.5vw;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display:grid;
+    grid-template-areas:
+            "a b c"
+            "d e f";
+    grid-template-columns: 0.85fr 0.85fr 0.75fr;
+    grid-template-rows: 5vw;
+
+}
+#cardinfo{
+   display:contents;
+}
+.gym:active{
+    background-color: #f0f0f0;
+}
+.gym:active #bemanningstider {
+    border-color: #ffffff;
+}
+#läsmer {
+    grid-area: c;
+    padding-right: 1.1vw;
+    justify-self: end;
+    padding-top: 1vw;
+
+}
+#läsmer button {
+    width: 9.5vw;
+    height: 2.8vw;
+    font-size: 1.5vw;
+    font-family: Roboto Condensed;
+    box-shadow: 0vw 0.1vw 0.2vw #293844;
+}
+.gymheader {
+    grid-area: a;
+    grid-column: span 2;
+    color: #ED8606;
+    font-family: Roboto Condensed;
+    font-weight: 600;
+    font-size: 2.5vw;
+    align-self: center;
+    padding-left: 1.6vw;
+}
+.gymkategori{
+    height: 90%;
+}
+.gymkategori h4 {
+    color: #ED8606;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 0.95vw;
+    margin-bottom:0vw;
+    text-transform: uppercase;
+
+}
+.gymkategori p {
+    color: #293844;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 0.9vw;
+    margin-top: 0.5vw;
+
+}
+#adress{
+    grid-area: d;
+    padding-left: 1.6vw;
+}
+#E-post {
+    grid-area: d;
+    padding-left: 1.6vw;
+    padding-top: 4.5vw;
+}
+#bemanningstider {
+
+    grid-area: e;
+    justify-self:center;
+    border-right:0.15vw solid #293844;
+    border-left:0.15vw solid #293844;
+    padding-left: 1.9vw;
+    padding-right: 1.9vw;
+    transition: all 0.3s;
+
+}
+.symbolcontainer {
+    grid-area: f;
+    display: grid;
+    grid-template-areas:
+            " .a b ."
+            ". c d .";
+    grid-template-columns: 0.1fr 0.6fr 0.6fr 0.1fr;
+    grid-template-rows: repeat(2, 1fr);
+    height: 88%;
+
+
+
+}
+
+.gymsymboler{
+
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+.gymsymboler p {
+    color: #293844;
+    font-family: Roboto Condensed;
+    font-weight: 500;
+    font-size: 0.8vw;
+    margin:0vw;
+    margin-top:0.3vw;
+}
+.gymsymboler span {
+    color: #293844;
+    font-size: 2vw;
+}
+#klocka {
+    grid-area: a;
+}
+#hantel{
+    grid-area: b;
+}
+#parkering{
+    grid-area: c;
+}
+#gruppträning{
+    grid-area: d;
+}
+#Bodenarena .symbolcontainer{
+    grid-template-areas:
+            " a b "
+            " c d "
+            " e f ";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+
+}
+#Bodenarena .gymsymboler span{
+    font-size: 1.5vw;
+
+}
+#Furunäset .symbolcontainer{
+    grid-template-areas:
+            " a b "
+            " c d "
+            " e f ";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+
+}
+#Furunäset .gymsymboler span{
+    font-size: 1.5vw;
+
+}
+#Backcity .symbolcontainer{
+    grid-template-areas:
+            " a b "
+            " c d "
+            " e f ";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+
+}
+#Backcity .gymsymboler span{
+    font-size: 1.5vw;
+}
+
+
+#utegym {
+    grid-area: e;
+}
+#padel {
+    grid-area: f;
+}
+#sjukgymnast{
+    grid-area:e;
+}
+#map{
+    grid-area: b;
+    height:100%;
+    margin-top:3vw;
+}
+body.thegyms #hero{
+
+    height:45.73vw;
+}
+.thegyms #hero .HeaderText{
+
+    margin-bottom: 0vw;
+    font-size: 5vw;
+}
+.heroinfo {
+    background-color: #1E1E1E;
+    width: 100%;
+    height: 14vw;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    display: grid;
+    grid-template-areas: ". a b c .";
+    grid-template-columns: 0.14fr 1fr 1fr 1fr 0.14fr;
+
+}
+.heroinfo h4 {
+    color: #ED8606;
+    opacity: 90%;
+    text-transform: uppercase;
+    font-family: Roboto Condensed;
+    font-size: 1.7vw;
+    font-weight: 500;
+    border-bottom: 0.1vw solid #636363;
+    width: 11%;
+    margin-bottom: 1vw;
+
+    padding-bottom: 0.625vw;
+}
+.heroinfo p {
+    font-family: Roboto Condensed;
+    font-size: 1.275vw;
+    font-weight: 400;
+}
+.heroinfo #adress {
+    grid-area: a;
+    padding-left: 0vw;
+
+}
+.heroinfo #e-post{
+    grid-area: b;
+
+}
+.heroinfo #e-post #container{
+    justify-items: start;
+    justify-self: center;
+}
+.heroinfo #e-post #container h4{
+    white-space: nowrap;
+    width:25%;
+
+}
+.heroinfo #bemanningstider {
+    grid-area: c;
+    padding: 0vw;
+    border:none;
+    justify-self: end;
+}
+.heroinfo #bemanningstider #container {
+    justify-items:start;
+}
+.heroinfo #bemanningstider #container h4{
+    width: 53%;
+}
+.tabell-tider{
+    font-family: Roboto Condensed;
+    font-size: 1.275vw;
+    font-weight: 500;
+
+
+}
+.tabell-tider #dagar {
+    padding-right: 4.7vw;
+}
+
+.inforuta{
+
+    height: 19vw;
+    width:50%;
+    justify-self: center;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 10;
+    border: 0.01vw ridge rgba(237, 134, 6, 0.3);
+    box-shadow: 0vw 0.2vw 0.2vw rgba(0, 0, 0, 0.25);
+    bottom:-16.7vw;
+    transform: translateX(50%);
+
+
+}
+.aboutgym {
+
+    margin:20vw 5vw;
+    border: 0.15vw ridge rgb(41, 56, 68, 0.25);
+    border-radius: 1vw;
+    height: 45vw ;
+    box-shadow: 0vw 0.2vw 0.2vw rgba(0, 0, 0, 0.25);
+    display: flex;
+    margin-bottom: 0;
+
+
+}
+.aboutgym h2{
+    color: #293844;
+    font-family: Roboto Condensed;
+    font-weight: 700;
+    font-size: 3.3vw;
+    text-transform: uppercase;
+    padding-left: 5.6vw;
+    padding-top: 1vw;
+}
+body.thegyms .herotext{
+    top:20vw;
+}
+body.thegyms #sida2 {
+
+    top:-60vw;
+}
+body.thegyms #sida3 {
+    height:54vw;
+
+
+}
+.abouttext{
+    display: grid;
+
+}
+.gymvidplace{
+    display:flex;
+    width:75%;
+    justify-self: center;
+    margin-top: 3vw;
+    box-shadow: 0vw 0vw 0.2vw rgba(0, 0, 0, 0.50);
+    height: 42vw;
+}
+.gymvideo {
+    width: 100%;
+    height: auto;
+}
+body#bli-medlem{
+    background-color: #1E1E1E;
+}
+body#bli-medlem #hero{
+    background-image: url("./images/våragym2.jpg");
+    background-size: cover;
+    background-position-y: center;
+    height: 45.73vw;
+
+}
+body#bli-medlem .herotext{
+    font-size: 5vw;
+    top:27vw;
+}
+body#bli-medlem #sida2{
+
+    height:100vw;
+}
+.blackfade{
+
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0%, rgba(30,30,30,0.25)15%, rgba(30,30,30,0.50)25%, rgba(30,30,30,0.9)50%, rgba(30,30,30,1)100%);
+    width: 100%;
+    height: 14vw;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+
+
+}
+
+.del1{
+    height: 45vw;
+
+    border-bottom: 0.01vw dashed rgba(240, 240, 240, 1);
+}
+.del1 form{
+    height: 100%;
+}
+.del1-grid{
+    display: grid;
+    grid-template-areas: "a b";
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+.del1 form{
+
+}
+.sökanläggning{
+    width:60%;
+    padding-left:6vw;
+    padding-top:6vw;
+}
+.sökanläggning h2{
+    font-size: 2.5vw;
+    font-family: Roboto;
+    font-weight: 600;
+    margin-bottom: 3vw;
+    color: #ED8606;
+
+}
+.sökanläggning input{
+    height:3.5vw;
+    width:100%;
+    background-color: rgba(87, 87, 87, 0.4);
+    border:none;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1.15vw;
+    padding-left: 0.5vw;
+    border-radius: 0.5vw;
+    outline: none;
+}
+.sökanläggning input:focus{
+    outline: 0.1vw solid #ED8606;
+}
+.dropdown-list{
+    list-style: none;
+    background-color: rgba(87, 87, 87, 0.4);
+    overflow-y: auto;
+    width: 100%;
+    padding:0;
+    height: 15vw;
+
+}
+.dropdown-list li {
+    padding: 8px;
+    cursor: pointer;
+    font-family: Roboto Condensed;
+    font-weight: 500;
+}
+.dropdown-list li:hover {
+    background-color: #57575766;
+}
+.fortsätt{
+    align-self: end;
+    justify-self: end;
+    padding-right: 6vw;
+    padding-bottom: 2vw;
+}
+.fortsätt .orangeButton{
+    width: 12vw;
+    height: 3vw;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-weight: 800;
+    font-size: 1.6vw;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out, color 0.3s ease-in-out;
+
+
+}
+.fortsätt .orangeButton:hover{
+    transform: scale(1.05);
+    border: 0.01vw solid #ffffff;
+}
+.del2{
+    height: 47vw;
+}
+.del2-grid{
+    display: grid;
+    grid-template-areas:
+            "a"
+            "b"
+            "c";
+    grid-template-rows: 0.3fr 1fr 0.2fr;
+    height: 100%;
+}
+.del2-grid h2{
+    font-size: 2.5vw;
+    font-family: Roboto;
+    font-weight: 600;
+    margin-bottom: 3vw;
+    color: #ED8606;
+    padding-left: 6vw;
+    padding-top: 6vw;
+    grid-area: a;
+
+}
+#abonnemang {
+    grid-area: b;
+    overflow-x:auto ;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    scrollbar-color: #171717 transparent;
+}
+
+.abonnemangcard{
+
+    height: 90%;
+    width: 19.04vw;
+    background-color: #1E1E1E;
+    border: 0.1vw solid #ED8606;
+    flex-shrink: 0;
+    margin: 0vw 1vw;
+
+
+
+}
+.abonnemanggrid{
+    display: grid;
+    grid-template-areas:
+            "a"
+            "b"
+            "c";
+    grid-template-rows: 1fr 0.78fr 0.42fr;
+    height: 100%;
+    width: 100%;
+}
+.abonnemanggrid img{
+    grid-area: a;
+    height: 100%;
+    width: 100%;
+
+}
+.abonnemangtext {
+    grid-area: b;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+.abonnemangtext h5{
+    font-family: Roboto Condensed;
+    font-weight: 800;
+    font-size: 1.2vw;
+    padding-left: 1.2vw;
+    margin-top: 1vw;
+}
+.pris {
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 1.9vw;
+    color: #ED8606;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+.väljabonnemang {
+
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.väljabonnemang button{
+    background-color: transparent;
+    width: 90%;
+    color: #ED8606;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.väljabonnemang button:hover{
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.väljabonnemang button:focus{
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* för mobil*/
+@media (max-width: 500px ){
+    br{
+        display: none;
+}
+
+    header{
+        height: 20vw;
+        width:100vw;
+        position: sticky;
+        background-color: #1E1E1E;
+
+    }
+    body#home header{
+        position: fixed;
+        background:transparent;
+    }
+    .navboard {
+        height: 100%;
+        align-content: center;
+
+    }
+    .lock{
+        display:block;
+        align-content: center;
+        padding-left: 3vw;
+
+
+    }
+    .lock span{
+        font-size: 9vw;
+    }
+
+    .hamburger {
+        cursor:pointer;
+        display:block;
+        background: none;
+        font-size:9vw;
+        padding-right:3vw;
+    }
+
+    .Navlist{
+        display:none
+
+    }
+    .Navlist:active {
+        display:block;
+    }
+
+    h2 {
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 2.85vw;
+    }
+    .navboard:hover  {
+        background-color: rgba(30, 30, 30, 0.8);
+        filter: drop-shadow( #000000 0vw 0vw 0.41vw);
+        filter: shadow() ;
+        filter: blur(2);
+
+
+    }
+
+    .navboard:hover button {
+    background: none
+    }
+
+    .navboard:hover #logo {
+        filter:none;
+    }
+    .Navlist a:hover {
+
+        color: #ED8606;
+    }
+
+    #logo {
+        padding-left:0;
+        padding-top: 2vw;
+
+        filter: brightness(1);
+    }
+    body#home #logo{
+        filter:brightness(0.5);
+    }
+    #logo img {
+        height:15vw;
+    }
+
+
+    .Navlist a {
+        Font-family: Montserrat;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        text-decoration: none;
+        font-size: 1.09vw;
+        transition: all 0.3s;
+
+    }
+    .Navlist ul{
+        margin-top:1.25vw;
+        margin-bottom: 1.25vw;
+    }
+    .Navlist li {
+        display: inline-block;
+        padding: 0vw 1.4vw;
+
+    }
+
+    #hero video {
+        position: absolute;
+
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        object-fit: cover;
+
+    }
+    body#träna #hero{
+        background-image: url('./images/Träna.jpg');
+        background-size: cover;
+        background-position-y: 40%;
+    }
+    body#träna #hero .HeaderText {
+        font-size: 8vw;
+        font-weight: 600;
+        margin-left: 10vw;
+
+    }
+    body#anderstorp #hero{
+        background-image: url('./images/anderstorp.jpg');
+        background-size: cover;
+        background-position: left;
+    }
+    body#våra-gym #hero{
+        background-image: url('./images/våragym2.jpg');
+        background-size: cover;
+        background-position-y: 60%;
+    }
+    .heroimage {
+
+
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+
+    }
+    .dimoverlay {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    body.thegyms .dimoverlay{
+        background:linear-gradient(to bottom, rgba(0,0,0,0)0%,  rgba(30,30,30,0.6)60%, rgba(30,30,30,1)100%)
+    }
+
+
+    .shadow {
+        box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.3);
+
+    }
+
+
+    .herotext{
+        z-index: 500;
+        position: relative;
+        margin-top: 0;
+        top:30vw;
+
+    }
+
+    .HeaderText {
+        font-family: Roboto Condensed;
+        font-weight: 800;
+        font-size: 11vw;
+        margin-left: 3vw;
+        text-transform: uppercase;
+        margin-top:0;
+        word-break: break-word;
+
+    }
+    .HeaderText br{
+        display: none;
+    }
+    .orangeButton {
+        background-color: #ED8606;
+        width: 40.7vw;
+        height:8.9vw;
+        position: relative;
+        border-radius: 5vw;
+        border-color: #ed8606;
+        border-style: solid;
+        border-width: thin;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 3.34vw;
+        transition:all 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    }
+
+    a .orangeButton:hover {
+        transform: scale(1.05);
+        border: 0.01vw solid #ffffff;
+
+    }
+    button:hover {
+        transform: scale(1.05);
+        border: 0.01vw solid #ffffff;
+    }
+    .herotext a{
+        padding-left: 3vw;
+    }
+
+    .Navlist .orangeButton {
+        background: transparent;
+        border-radius:2.34vw;
+        border-color: #D67505;
+        border-style: solid;
+        border-width: thin;
+        height:2.94vw;
+        width: 10.6vw;
+        font-family: Montserrat;
+        font-weight: 600;
+
+    }
+
+    .slogan {
+        display: flex;
+        justify-content: center;
+    }
+
+    #hero {
+        height:50vw;
+        position: relative;
+        width: 100%;
+
+    }
+    body#home #hero {
+        height:180vw;
+    }
+    body#home .herotext {
+        top:80vw;
+    }
+
+    #sida2{
+        width: 100%;
+        height: 393vw;
+        align-items: center;
+
+    }
+    .BlueHeaders {
+        color: #293844;
+        text-transform: uppercase;
+        margin-bottom: 0vw;
+        text-align: center;
+        font-size:6.1vw;
+        width: 80%;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-areas:
+    ". a ."
+    ". b ."
+    ". c .";
+        grid-template-rows: repeat(3,118.65vw) ;
+        grid-template-columns:0.1fr 1fr 0.1fr;;
+        height: 359vw;
+        grid-row-gap: 5vw;
+        justify-content: center;
+
+        padding:0;
+
+
+
+    }
+    .card{
+        transition: all 0.3s ease-in-out;
+        border-radius: 5vw;
+        margin-bottom:0;
+    }
+    .card img{
+        height:100%;
+        width:100%;
+
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.5);
+
+    }
+    #card1 {
+        grid-area: a;
+        height: 100%;
+
+    }
+
+    #card2 {
+        grid-area: b;
+        height: 100%;
+
+    }
+
+    #card3 {
+        grid-area: c;
+        height: 100%;
+    }
+
+
+
+    .cards li{
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+    }
+
+    .cardText {
+        top:0.39vw;
+        position: absolute;
+
+        padding-left: 5vw;
+        justify-content: space-between;
+
+    }
+    .cards a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Roboto Condensed;
+        height:100%;
+        width:100%;
+
+    }
+    .cards h3 {
+        font-size: 6.96vw;
+        font-weight: 600;
+    }
+
+    .cards p {
+        font-family: Roboto ;
+        font-weight: 700;
+        font-size: 3.34vw;
+
+        padding-top: 82vw;
+        text-align:left;
+
+    }
+
+
+    .cards img {
+        border-radius: 5vw;
+        filter: brightness(0.6);
+
+    }
+    #sida3 {
+        height: 175vw;
+
+    }
+    .goActive {
+        margin: 6.8vw 0 0 0;
+        height:160vw;
+        border-radius: 0;
+    }
+    .items {
+
+        top:1vw;
+        position: relative;
+        left:0;
+        justify-content: center;
+    }
+    .items h2 {
+        margin-bottom: 0vw;
+        font-size: 8.2vw;
+        justify-self: center ;
+        margin-top:6.8vw;
+
+    }
+    .items p {
+        font-weight: 400;
+        font-size: 3.7vw;
+        justify-self: center;
+        margin-bottom: 5vw;
+        text-align: center;
+        white-space: pre-line;
+
+    }
+    #appimage {
+
+        position: relative;
+        z-index: 0;
+        height:auto; width: 100%; top: 5vw; left: 0vw;
+    }
+    #appimage img {
+        height: 70vw;
+        width: 100%;
+    }
+    .items a{
+        padding-left: 29.65vw;
+    }
+    .aboutAPP {
+
+        grid-template-rows: 16.56vw 16.56vw ;
+        height: 100vw;
+        width: 60vw;
+        top: 5vw;
+        left: 20vw;
+        row-gap: 7vw;
+
+
+    }
+    .about {
+        font-size: 2vw;
+        justify-items: center;
+
+        padding-top: 0vw;
+    }
+    .circle {
+        height: 16.56vw;
+        width: 16.56vw;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #text1 {
+        position: absolute;
+        left: 0.8vw;
+
+    }
+    #symbol {
+        font-size: 10vw;
+        font-weight: 100;
+    }
+
+    #sida4 {
+        height: 80vw;
+    }
+    .kontaktaOss{
+        grid-template-areas:
+                "a"
+                "b"
+                "c";
+        grid-template-rows: repeat(3,1fr) ;
+        grid-template-columns: none;
+        justify-items: center;
+    }
+    .kontaktaOss h4{
+        grid-area: a;
+
+        margin: 0;
+        font-size: 4.3vw
+
+
+    }
+    .kontaktaOss h1{
+        grid-area: b;
+        align-self: start;
+        font-size: 8.6vw;
+        margin-left: 0;
+        text-underline-offset: 1vw;
+        text-decoration-thickness: 0.4vw;
+
+    }
+    .kontaktaOss a{
+        height: 20vw;
+    }
+    .kontaktaOss span{
+        width:6.68vw;
+        font-size: 6.68vw;
+    }
+    .kontaktaOss .orangeButton{
+        height:20vw;
+        width: 20vw;
+        margin-left: 0;
+    }
+    footer{
+        height:180vw;
+    }
+    .footer {
+
+        display: grid;
+        grid-template-areas:
+                "a"
+                "b"
+                "c"
+                "d";
+
+        grid-template-columns: none;
+        border-top: solid 1vw #ED8606;
+        height: 100%;
+
+    }
+    .footer img {
+        height :15vw;
+        grid-area:d;
+        padding: 0 0 0vw 0;
+        justify-self: center;
+        align-self: end;
+        margin: 5vw;
+    }
+    .footer ul{
+        font-size:3.7vw;
+    }
+    .footer li{
+        margin-bottom: 3vw;
+    }
+    .footer li h4{
+        font-size:4.3vw;
+        margin-bottom: 0vw;
+    }
+    #list1 {
+        grid-area: a;
+        padding-left: 5vw;
+    }
+
+
+    #list2 {
+        grid-area: b;
+        padding-left:5vw;
+    }
+    #list3 {
+        grid-area: c;
+        padding-left: 5vw;
+
+    }
+    #list3 li{
+        padding-left:0vw;
+
+    }
+    .socials{
+        width: 17vw;
+        padding-bottom: 7vw;
+    }
+
+    #fb {
+        font-size: 8.57vw;
+        padding-top: 0.8vw;
+        font-weight: 400;
+    }
+    #ig{
+        font-size: 10vw;
+    }
+    #tränasida2 {
+        height: 550vw;
+    }
+    .träningsformer {
+        grid-template-areas:
+                "b"
+                "a";
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr) ;
+        height: 130vw;
+        padding-top: 6vw;
+        justify-content: center;
+        justify-items: center;
+        margin: 10vw 0;
+        padding:0;
+
+    }
+
+    .träningsbild {
+        grid-area: b;
+        height: 60vw;
+        width: 90vw;
+
+    }
+
+    .träningstext {
+        grid-area: a;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 90vw;
+
+    }
+    .träningstext h2 {
+        font-size: 9vw;
+    }
+    .träningstext h3 {
+        font-size: 5.35vw;
+    }
+    .träningstext p {
+        font-size: 3.2vw;
+    }
+
+
+    .anläggningar-pil{
+        display: flex;
+        flex-direction:row;
+
+    }
+
+    .anläggningar-pil a {
+
+        font-size: 4.27vw;
+        text-decoration-thickness: 0.4vw;
+        text-underline-offset: 0.5vw;
+
+    }
+    .anläggningar-pil span{
+        color: #293844;
+        font-weight: 900;
+        font-size: 5.1vw;
+    }
+    #träna-online-träna .anläggningar-pil span {
+        transform: rotate(180deg)
+    }
+    #gym-träna .anläggningar-pil span {
+        transform: rotate(180deg);
+    }
+    #våragym-sida2 {
+        height:200vw;
+    }
+    .mobile-searchgym{
+        display: none;
+    }
+    .computer-searchgym{
+        display:inline-block;
+        justify-items: center;
+    }
+
+
+    .gymcontainer{
+        display: grid ;
+        grid-template-areas:
+                "a"
+                "b";
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr) ;
+        height: 100%;
+        width: 100vw;
+        margin-top: 0;
+        justify-content: center;
+    }
+    #search {
+        grid-area: b;
+        margin-top: 5vw;
+    }
+    .searchcontainer{
+        width: 90vw;
+        height: 90vw;
+
+    }
+
+    .computer-searchgym h2 {
+
+        color: #293844;
+        font-family: Roboto Condensed;
+        font-weight: 600;
+        font-size: 5.5vw;
+
+    }
+    .computer-searchgym input {
+        height: 9vw;
+        border: solid 0.05vw #293844;
+        padding:0vw;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size:4.1vw;
+        color: rgba(41, 56, 68, 0.5 );
+        padding-left: 2vw;
+        width: 90vw;
+
+    }
+
+    .allgyms {
+        margin-top: 3.4vw;
+        width:100%;
+        height: 90%;
+        overflow-y: auto;
+        scrollbar-width: 2.5vw;
+        scrollbar-color: #f0f0f0 #d9d9d9;
+    }
+
+    .gym{
+
+        width: 97.5%;
+        height: 61.5vw;
+        margin-bottom: 1.5vw;
+        cursor: pointer;
+        display:grid;
+
+        grid-template-areas: "a"
+    "b""c""d";
+        grid-template-columns:none;
+        grid-template-rows: repeat(4,1fr) ;
+
+
+
+    }
+
+    .gym:active{
+        background-color: #f0f0f0;
+    }
+    .gym:active #bemanningstider {
+        border-color: #ffffff;
+    }
+    #läsmer {
+        grid-area: d;
+        padding-right: 1.1vw;
+        justify-self: center;
+        padding-top: 1vw;
+        align-self: center;
+
+    }
+    #läsmer button {
+
+        width: 60.7vw;
+        height: 9.2vw;
+        font-size: 5vw;
+        font-family: Roboto Condensed;
+        border-radius: 2.5vw;
+        font-weight: 600;
+    }
+    #cardinfo{
+        grid-area: c;
+        display: grid;
+        grid-template-areas: "a b c";
+        grid-template-columns:repeat(3,1fr);
+        align-self: start;
+    }
+    .gymheader {
+        grid-area: a;
+
+        font-size: 7vw;
+        align-self: center;
+        padding-left: 1.6vw;
+        margin:0;
+    }
+    .gymkategori{
+        height: 90%;
+    }
+    .gymkategori h4 {
+
+        font-size: 3vw;
+        margin-bottom:0vw;
+        text-transform: uppercase;
+
+    }
+    .gymkategori p {
+        font-weight: 600;
+        font-size: 2.3vw;
+        margin-top: 0.5vw;
+        white-space: pre-line;
+
+    }
+    #adress{
+        grid-area: b;
+        padding-left: 1.6vw;
+    }
+    #E-post {
+        grid-area: a;
+        padding-left: 1.6vw;
+        padding-top: 0;
+    }
+    #bemanningstider {
+
+        grid-area: c;
+        justify-self:center;
+        border-right:none;
+        border-left:none;
+        padding-left: 1.9vw;
+        padding-right: 1.9vw;
+        transition: all 0.3s;
+
+    }
+    .symbolcontainer {
+        grid-area: b;
+        display: grid;
+        grid-template-areas:
+            " a b c d";
+        grid-template-columns: repeat(4,1fr) ;
+        grid-template-rows: none;
+        height: 70%;
+        border-bottom: 0.2vw solid #293844;
+        padding:0;
+    }
+    .gym:active .symbolcontainer {
+        border-color: #FFFFFF;
+    }
+
+    .gymsymboler{
+
+        display: flex;
+        flex-direction: column;
+        align-self:end;
+        align-items: center;
+        justify-items: center;
+    }
+
+
+
+    .gymsymboler p {
+        color: #293844;
+        font-family: Roboto Condensed;
+        font-weight: 500;
+        font-size: 2vw;
+        margin:0vw;
+        margin-top:1vw;
+    }
+    .gymsymboler span {
+        color: #293844;
+        font-size: 5vw;
+    }
+    #klocka {
+        grid-area: a;
+    }
+    #hantel{
+        grid-area: b;
+    }
+    #parkering{
+        grid-area: c;
+    }
+    #gruppträning{
+        grid-area: d;
+    }
+    #Bodenarena .symbolcontainer{
+        grid-template-areas:
+            " a b c d e f ";
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: none;
+
+
+    }
+    #Bodenarena .gymsymboler span{
+        font-size: 4vw;
+
+    }
+    #Furunäset .symbolcontainer{
+        grid-template-areas:
+            " a b c d e ";
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: none
+
+
+    }
+    #Furunäset .gymsymboler span{
+        font-size: 4.5vw;
+
+    }
+    #Backcity .symbolcontainer{
+        grid-template-areas:
+            " a b c d e ";
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: none;
+
+
+    }
+    #Backcity .gymsymboler span{
+        font-size: 4.5vw;
+    }
+    #Gammelstad .symbolcontainer,
+    #Björksgatan .symbolcontainer,
+    #Porsön .symbolcontainer{
+        grid-template-areas: " a b c";
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #LyckseleN .symbolcontainer span,
+    #Björksgatan .symbolcontainer span,
+    #Porsön .symbolcontainer span{
+        font-size: 5.5vw;
+    }
+
+
+    #map{
+        grid-area: a;
+        height: 100vw;
+
+    }
+    .map{
+        height: 71.8vw;
+
+    }
+    body.thegyms #hero{
+
+        height:109vw;
+    }
+    body.thegyms .heroimage{
+        height:50vw;
+    }
+    .thegyms #hero .HeaderText{
+
+        margin-bottom: 0vw;
+        font-size: 11vw;
+    }
+    .heroinfo {
+        height: 110vw;
+        position: relative;
+        bottom: -35vw;
+        display: grid;
+        grid-template-areas: "a""b""c";
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+
+    }
+    .heroinfo h4 {
+        opacity: 90%;
+        font-size: 6.15vw;
+        border-bottom: 0.2vw solid #8a8a8a;
+        width: 11%;
+
+    }
+    .heroinfo p {
+        font-size: 4.1vw;
+        font-weight: 500;
+        font-family: Roboto;
+    }
+    .heroinfo #adress {
+        grid-area: a;
+        padding-left: 10vw;
+
+    }
+    .heroinfo #e-post{
+        grid-area: b;
+        padding-left: 10vw;
+
+    }
+    .heroinfo #e-post #container{
+        justify-items: start;
+        justify-self: left;
+    }
+    .heroinfo #bemanningstider {
+        padding: 0 0 10VW 10vw;
+        justify-self: left;
+
+    }
+
+    .heroinfo #bemanningstider #container {
+        justify-items:start;
+    }
+    .tabell-tider{
+        font-size: 4.1vw;
+    }
+    .tabell-tider #dagar {
+        padding-right: 4.7vw;
+    }
+
+    .inforuta{
+
+        height: 65vw;
+        width:90%;
+        justify-self: center;
+        bottom:-165vw;
+        transform: translateX(5%);
+
+
+    }
+    .aboutgym {
+
+        height:100vw ;
+        border:none;
+        margin:0;
+        border-radius: 0;
+    }
+    .aboutgym h2{
+
+        font-size: 9vw;
+    }
+    body.thegyms .herotext{
+        top:60vw;
+    }
+    body.thegyms #sida2 {
+        height: 115vw;
+        margin-top:180vw;
+    }
+    body.thegyms #sida3 {
+        height:56vw;
+    }
+    .abouttext{
+        display: grid;
+
+    }
+    .gymvidplace{
+        width:100%;
+        margin-top: 0vw;
+        height: 56vw;
+    }
+    .gymvideo {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
