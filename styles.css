@@ -111,17 +111,17 @@ filter:none;
 
 }
 body#anderstorp #hero{
-    background-image: url('./images/anderstorp.jpg');
+    background-image: url('images/anderstorp.jpg');
     background-size: cover;
     background-position: center;
 }
 body#träna #hero{
-    background-image: url('./images/Träna.jpg');
+    background-image: url('images/Träna.jpg');
     background-size: cover;
     background-position-y: 40%;
 }
 body#våra-gym #hero{
-    background-image: url('./images/våragym2.jpg');
+    background-image: url('images/våragym2.jpg');
     background-size: cover;
     background-position-y: 60%;
 }
@@ -1092,7 +1092,7 @@ body#bli-medlem{
     background-color: #1E1E1E;
 }
 body#bli-medlem #hero{
-    background-image: url("./images/våragym2.jpg");
+    background-image: url("images/våragym2.jpg");
     background-size: cover;
     background-position-y: center;
     height: 45.73vw;
@@ -1432,7 +1432,7 @@ body#bli-medlem #sida2{
 
     }
     body#träna #hero{
-        background-image: url('./images/Träna.jpg');
+        background-image: url('images/Träna.jpg');
         background-size: cover;
         background-position-y: 40%;
     }
@@ -1443,12 +1443,12 @@ body#bli-medlem #sida2{
 
     }
     body#anderstorp #hero{
-        background-image: url('./images/anderstorp.jpg');
+        background-image: url('images/anderstorp.jpg');
         background-size: cover;
         background-position: left;
     }
     body#våra-gym #hero{
-        background-image: url('./images/våragym2.jpg');
+        background-image: url('images/våragym2.jpg');
         background-size: cover;
         background-position-y: 60%;
     }
