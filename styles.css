@@ -1097,7 +1097,6 @@ body#bli-medlem #hero{
 
 }
 body#bli-medlem .herotext{
-    font-size: 5vw;
     top:27vw;
 }
 body#bli-medlem #sida2{
@@ -1463,8 +1462,8 @@ body#bli-medlem #sida2{
         inset: 0;
         background-color: rgba(0, 0, 0, 0.3);
     }
-    body.thegyms .dimoverlay{
-        background:linear-gradient(to bottom, rgba(0,0,0,0)0%,  rgba(30,30,30,0.6)60%, rgba(30,30,30,1)100%)
+    body.thegyms .dimoverlay {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(30, 30, 30, 0.6) 60%, rgba(30, 30, 30, 1) 100%);
     }
 
 
@@ -2293,6 +2292,220 @@ body#bli-medlem #sida2{
     .gymvideo {
         width: 100%;
         height: auto;
+    }
+    body#bli-medlem{
+        background-color: #1E1E1E;
+    }
+    body#bli-medlem #hero{
+        background-image: url("images/våragym2.jpg");
+        background-size: cover;
+        background-position-y: center;
+        height: 45.73vw;
+
+    }
+    body#bli-medlem .herotext{
+
+        top:35vw;
+    }
+    body#bli-medlem .HeaderText {
+        font-size: 8vw ;
+    }
+    body#bli-medlem #sida2{
+
+        height:300vw;
+    }
+    .blackfade{
+
+        linear-gradient(to bottom, rgba(0,0,0,0)0%, rgba(30,30,30,0.4)10%,rgba(30,30,30,0.9)50%, rgba(30,30,30,1)100%)        width: 100%;
+        height: 14vw;
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+    }
+
+    .del1{
+        height: 135vw;
+
+        border-bottom: 0.01vw dashed rgba(240, 240, 240, 1);
+    }
+    .del1 form{
+        height: 100%;
+    }
+    .del1-grid{
+        display: grid;
+        grid-template-areas: "a""b";
+        grid-template-columns: none;
+        grid-template-rows: 1fr 0.2fr;
+        height: 100%;
+    }
+
+    .sökanläggning{
+        width:80vw;
+        padding:0;
+        justify-self: center;
+        margin-top:10vw;
+    }
+    .sökanläggning h2{
+        font-size: 6vw;
+        font-family: Roboto, sans-serif;
+        font-weight: 600;
+        margin-bottom: 10vw;
+        justify-self: center;
+
+
+    }
+    .sökanläggning input{
+        height:10vw;
+        width:77vw;
+        font-family: Roboto, sans-serif;
+        font-size: 3vw;
+        padding:0 0 0 3vw;
+        border-radius: 0.5vw;
+    }
+
+    .sökanläggning input:focus{
+        outline: 0.1vw ridge #ED8606;
+    }
+    .dropdown-list{
+        list-style: none;
+        background-color: rgba(87, 87, 87, 0.4);
+        overflow-y: auto;
+        width: 100%;
+        padding:0;
+        height: 20vw;
+
+    }
+    .dropdown-list li {
+        padding: 3vw;
+        font-size: 3vw;
+    }
+    .dropdown-list li:hover {
+        background-color: #57575766;
+    }
+    .fortsätt{
+        align-self: center;
+        justify-self: center;
+        padding:0;
+    }
+    .fortsätt .orangeButton{
+        width: 80vw;
+        height: 15vw;
+        font-size: 4vw;
+        cursor: pointer;
+        transition:all 0.3s ease-in-out, color 0.3s ease-in-out;
+
+
+    }
+    .fortsätt .orangeButton:hover{
+        transform: scale(1.05);
+        border: 0.01vw solid #ffffff;
+    }
+    .del2{
+        height: 47vw;
+    }
+    .del2-grid{
+        display: grid;
+        grid-template-areas:
+            "a"
+            "b"
+            "c";
+        grid-template-rows: 0.3fr 1fr 0.2fr;
+        height: 100%;
+    }
+    .del2-grid h2{
+        font-size: 2.5vw;
+        font-family: Roboto;
+        font-weight: 600;
+        margin-bottom: 3vw;
+        color: #ED8606;
+        padding-left: 6vw;
+        padding-top: 6vw;
+        grid-area: a;
+
+    }
+    #abonnemang {
+        grid-area: b;
+        overflow-x:auto ;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        scrollbar-color: #171717 transparent;
+    }
+
+    .abonnemangcard{
+
+        height: 90%;
+        width: 19.04vw;
+        background-color: #1E1E1E;
+        border: 0.1vw solid #ED8606;
+        flex-shrink: 0;
+        margin:0 1vw;
+
+
+
+    }
+    .abonnemanggrid{
+        display: grid;
+        grid-template-areas:
+            "a"
+            "b"
+            "c";
+        grid-template-rows: 1fr 0.78fr 0.42fr;
+        height: 100%;
+        width: 100%;
+    }
+    .abonnemanggrid img{
+        grid-area: a;
+        height: 100%;
+        width: 100%;
+
+    }
+    .abonnemangtext {
+        grid-area: b;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+    }
+    .abonnemangtext h5{
+
+        font-weight: 800;
+        font-size: 1.2vw;
+        padding-left: 1.2vw;
+        margin-top: 1vw;
+    }
+    .pris {
+        font-weight: bold;
+        font-size: 1.9vw;
+        color: #ED8606;
+        justify-self: flex-end;
+        align-self: flex-end;
+        margin-bottom: 0;
+    }
+
+    .väljabonnemang {
+
+        width:100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .väljabonnemang button{
+        background-color: transparent;
+        width: 90%;
+        color: #ED8606;
+        text-transform: uppercase;
+        font-size: 1.5vw;
+        font-weight: 500;
+    }
+    .väljabonnemang button:hover{
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+    .väljabonnemang button:focus{
+        border-color: rgba(255, 255, 255, 0.5);
     }
 
 
