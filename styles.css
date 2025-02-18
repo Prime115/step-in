@@ -2014,7 +2014,7 @@ body#bli-medlem #sida2{
     .gym:active #bemanningstider {
         border-color: #ffffff;
     }
-    #läsmer {
+    .läsmer {
         grid-area: d;
         padding-right: 1.1vw;
         justify-self: center;
@@ -2022,7 +2022,7 @@ body#bli-medlem #sida2{
         align-self: center;
 
     }
-    #läsmer button {
+    .läsmer button {
 
         width: 60.7vw;
         height: 9.2vw;
@@ -2224,27 +2224,27 @@ body#bli-medlem #sida2{
         font-weight: 500;
         font-family: Roboto, serif;
     }
-    .heroinfo .adress {
+    .heroinfo #adress {
         grid-area: a;
         padding-left: 10vw;
 
     }
-    .heroinfo .e-post{
+    .heroinfo #e-post{
         grid-area: b;
         padding-left: 10vw;
 
     }
-    .heroinfo .e-post .container{
+    .heroinfo #e-post .container{
         justify-items: start;
         justify-self: left;
     }
-    .heroinfo .bemanningstider {
+    .heroinfo #bemanningstider {
         padding: 0 0 10VW 10vw;
         justify-self: left;
 
     }
 
-    .heroinfo .bemanningstider .container {
+    .heroinfo #bemanningstider .container {
         justify-items:start;
     }
     .tabell-tider{
