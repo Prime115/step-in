@@ -2569,4 +2569,30 @@ body#bli-medlem #sida2{
     }
 
 }
+@media print {
+
+    img {
+        display: none !important;
+    }
+    header, footer.footer{
+        display: none !important;
+    }
+    body{
+        background: none;
+        color: black !important;
+        border-color: black !important;
+
+    }
+    h1, h2, h3, h4 {
+        page-break-after: avoid;
+        color:black !important;
+        border-color: black !important;
+        text-underline-color: black !important;
+    }
+    .orangeButton{
+        border-color: black !important;
+    }
+
+
+}
 
