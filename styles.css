@@ -2313,8 +2313,19 @@ body#bli-medlem #sida2{
         transform: translateX(5%);
 
     }
-    .inforuta h3{
-        font-size: 4.1vw;
+    .inforuta h4{
+        font-size: 5vw;
+        color: #ed8606;
+        font-weight: bold;
+    }
+    .inforuta p{
+        font-size: 3.5vw;
+        text-align: center;
+        width:90%;
+
+    }
+    .inforuta p br{
+        display: block;
     }
 
     .aboutgym {
@@ -2334,7 +2345,7 @@ body#bli-medlem #sida2{
         top:60vw;
     }
     body.thegyms #sida2 {
-        height: 130vw;
+        height: 135vw;
         margin-top:180vw;
     }
     body.thegyms #sida3 {
@@ -2552,7 +2563,7 @@ body#bli-medlem #sida2{
         padding:0;
     }
     .erbjudanden li{
-        font-size: 3vw;
+        font-size: 3.2vw;
         text-align: center;
     }
     .kolumn2{
@@ -2566,12 +2577,12 @@ body#bli-medlem #sida2{
     }
     .kolumn2 p{
         white-space: pre-line;
-        font-size: 3vw;
+        font-size: 3.2vw;
         text-align: center;
     }
 
     .kolumn3 p{
-        font-size: 3vw;
+        font-size: 3.2vw;
         text-align: center;
     }
 
