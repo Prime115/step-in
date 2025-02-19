@@ -149,7 +149,7 @@ body#våra-gym #hero{
 }
 
 .HeaderText {
-     font-family: Roboto Condensed, sans-serif;
+     font-family: "Roboto Condensed",sans-serif;
      font-weight: 800;
      font-size: 4.16vw;
      margin-left: 9.897vw;
@@ -296,7 +296,7 @@ body#home .herotext {
 .cards a{
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     height:37.73vw;
     width:27.26vw;
 
@@ -625,12 +625,12 @@ footer{
     font-size: 3.5vw;
     text-transform: uppercase;
     color:#293844;
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
 }
 .träningstext h3 {
     color:#D67505;
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 2.08vw;
     font-weight: 500;
     margin-top:0.7vw;
@@ -707,7 +707,7 @@ footer{
 .searchcontainer h2 {
 
     color: #293844;
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     font-size: 2.5vw;
 
@@ -768,14 +768,14 @@ footer{
     width: 9.5vw;
     height: 2.8vw;
     font-size: 1.5vw;
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     box-shadow: 0 0.1vw 0.2vw #293844;
 }
 .gymheader {
     grid-area: a;
     grid-column: span 2;
     color: #ED8606;
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     font-size: 2.5vw;
     align-self: center;
@@ -848,7 +848,7 @@ footer{
 
 .gymsymboler p {
     color: #293844;
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 500;
     font-size: 0.8vw;
     margin:0.3vw 0 0 0 ;
@@ -952,7 +952,7 @@ body.thegyms #hero{
     color: #ED8606;
     opacity: 90%;
     text-transform: uppercase;
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.7vw;
     font-weight: 500;
     border-bottom: 0.1vw solid #636363;
@@ -962,7 +962,7 @@ body.thegyms #hero{
     padding-bottom: 0.625vw;
 }
 .heroinfo p {
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.275vw;
     font-weight: 400;
 }
@@ -997,7 +997,7 @@ body.thegyms #hero{
     width: 53%;
 }
 .tabell-tider{
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.275vw;
     font-weight: 500;
 
@@ -1035,7 +1035,7 @@ body.thegyms #hero{
 }
 .aboutgym h2{
     color: #293844;
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
     font-size: 3.3vw;
     text-transform: uppercase;
@@ -1156,7 +1156,7 @@ body#bli-medlem #sida2{
 .dropdown-list li {
     padding: 8px;
     cursor: pointer;
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 500;
 }
 .dropdown-list li:hover {
@@ -1173,7 +1173,7 @@ body#bli-medlem #sida2{
     height: 3vw;
     text-transform: uppercase;
     text-align: center;
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 800;
     font-size: 1.6vw;
     cursor: pointer;
@@ -1255,14 +1255,14 @@ body#bli-medlem #sida2{
     width: 100%;
 }
 .abonnemangtext h5{
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 800;
     font-size: 1.2vw;
     padding-left: 1.2vw;
     margin-top: 1vw;
 }
 .pris {
-    font-family: Roboto Condensed, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: bold;
     font-size: 1.9vw;
     color: #ED8606;
@@ -1473,13 +1473,12 @@ body#bli-medlem #sida2{
     }
 
     .HeaderText {
-        font-family: Roboto Condensed, sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
         font-weight: 800;
         font-size: 11vw;
         margin-left: 3vw;
         text-transform: uppercase;
         margin-top:0;
-        word-break: break-word;
 
     }
     .HeaderText br{
@@ -1623,7 +1622,7 @@ body#bli-medlem #sida2{
     .cards a{
         text-decoration: none;
         text-transform: uppercase;
-        font-family: Roboto Condensed, sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
         height:100%;
         width:100%;
 
@@ -1947,7 +1946,7 @@ body#bli-medlem #sida2{
     .mobile-searchgym h2 {
 
         color: #293844;
-        font-family: Roboto Condensed, sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
         font-weight: 600;
         font-size: 5.5vw;
 
@@ -2005,7 +2004,7 @@ body#bli-medlem #sida2{
         width: 60.7vw;
         height: 9.2vw;
         font-size: 5vw;
-        font-family: Roboto Condensed, sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
         border-radius: 2.5vw;
         font-weight: 600;
     }
@@ -2089,7 +2088,7 @@ body#bli-medlem #sida2{
 
     .gymsymboler p {
         color: #293844;
-        font-family: Roboto Condensed, sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
         font-weight: 500;
         font-size: 2vw;
         margin:1vw 0 0 0;
@@ -2299,13 +2298,7 @@ body#bli-medlem #sida2{
         height:348vw;
     }
     .blackfade{
-
-        linear-gradient(to bottom, rgba(0,0,0,0)0%, rgba(30,30,30,0.4)10%,rgba(30,30,30,0.9)50%, rgba(30,30,30,1)100%);
-        width: 100%;
-        height: 14vw;
-        position: absolute;
-        z-index: 10;
-        bottom: 0;
+        linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(30,30,30,0.4) 10%,rgba(30,30,30,0.9) 0%, rgba(30,30,30,1) 100%);
     }
 
     .del1{
