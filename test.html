@@ -3,94 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go Active!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1E293B;
-            color: white;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #FFA500;
-            color: white;
-            padding: 15px 20px;
-            margin: 20px 0;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-        .icons {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .icon {
-            text-align: center;
-        }
-        .mobile-mockup {
-            width: 100%;
-            max-width: 300px;
-            margin: 20px auto;
-            display: block;
-        }
-        .hamburger {
-            display: block;
-            font-size: 30px;
-            cursor: pointer;
-            text-align: left;
-            padding: 10px;
-        }
-        nav {
-            display: none;
-            background-color: #334155;
-            padding: 10px;
-        }
-        nav a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-        }
-        @media (min-width: 768px) {
-            .hamburger { display: none; }
-            nav { display: block; }
-            .icons { justify-content: center; gap: 20px; }
-        }
-    </style>
+    <meta name="description" content="Step In är en av norra Sveriges största gymkedjor med anläggningar i
+          bland annat Piteå, Luleå, Skellefteå, Boden och Lycksele.
+          De erbjuder gym, gruppträning och personlig träning för sina medlemmar.">
+    <title>Step in - Norra Sveriges största gymkedja</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
-<div class="container">
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <nav id="menu">
-        <a href="#">In- och utpassering</a>
-        <a href="#">Boka pass</a>
-        <a href="#">Medlemskap</a>
-        <a href="#">Anläggningar</a>
-        <a href="#">Träningsstatistik</a>
-        <a href="#">Erbjudanden</a>
+<header >
+
+    <nav class="navboard" >
+        <div class="lock">
+            <span class="material-symbols-outlined">lock</span>
+
+        </div>
+        <div id = "logo">
+            <a href="index.html">
+                <img  src="images/Icon.png"
+                      alt="Det här är en bild på Step in loggan"> </a>
+        </div>
+        <button class="hamburger">
+            ☰
+        </button>
+
+        <div class ="Navlist">
+            <ul>
+                <li> <a href="våra-gym.html" > VÅRA GYM</a> </li>
+                <li> <a href="Träna.html"> TRÄNA</a> </li>
+                <li> <a href ="" > FÖRETAG</a> </li>
+                <li> <a href ="" > Logga in</a> </li>
+                <li>
+                    <button class=" orangeButton" onclick="window.location.href='bli-medlem.html'">
+                        BLI MEDLEM
+                    </button>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <h1>GO ACTIVE!</h1>
-    <p>Upptäck en smidigare gymupplevelse med vår app – boka pass, följ din träningsstatistik och få personliga träningsprogram direkt i mobilen.</p>
-    <a href="#" class="btn">LADDA NER HÄR!</a>
-    <div class="icons">
-        <div class="icon">🏋️‍♂️</div>
-        <div class="icon">📅</div>
-        <div class="icon">👤</div>
-    </div>
-    <img src="images/img.png" alt="App preview" class="mobile-mockup">
-</div>
-<script>
-    function toggleMenu() {
-        var menu = document.getElementById("menu");
-        menu.style.display = menu.style.display === "block" ? "none" : "block";
-    }
-</script>
+
+</header>
+<main>
+    <section class="hero">
+    </section>
+    <section id ="sida4">
+        <div class="kontaktaOss">
+            <h4>FUNDERINGAR?</h4>
+            <h1> KONTAKTA OSS</h1>
+            <button class ="orangeButton shadow" onclick="window.location.href=''"><span class="material-symbols-outlined">east</span></button>
+        </div>
+    </section>
+</main>
+
+<footer class = "footer">
+    <img src ="images/Icon.png" alt="bild på step in loggan">
+    <ul  id ="list1" >
+        <li><h4>KUNDSERVICE</h4></li>
+        <li> <a href ="">Almänna villkor</a> </li>
+        <li> <a href="">FAQ </a> </li>
+        <li> <a href="">Kundservice</a> </li>
+
+    </ul>
+
+    <ul id ="list2">
+        <li><h4>OM OSS</h4></li>
+        <li> <a href=""> Kontakta oss</a></li>
+        <li> <a href=""> Lediga tjänster</a></li>
+        <li> <a href=""> Öppetider</a></li>
+    </ul>
+    <ul id ="list3">
+        <li><h4>FÖLJ OSS</h4></li>
+        <li class="socials"> <a href="https://www.instagram.com/stepinsverige/" target="_blank">
+            <i id="ig" class = "fa fa-instagram" > </i>
+        </a>
+            <a href="https://www.facebook.com/stepinsverige/?locale=sv_SE" target="_blank">
+                <i id="fb" class="fa fa-facebook" > </i>
+            </a>
+        </li>
+        <li><h4> Ladda ner vår app</h4></li>
+        <li> <a href="https://apps.apple.com/se/app/go-active/id1553273081" class="APP" target="_blank"> Download IOS app</a></li>
+        <li>  <a href="https://play.google.com/store/apps/details?id=se.brpsystems.mobility&hl=sv&pli=1 " class="APP" target="_blank"> Download Android app</a></li>
+
+    </ul>
+
+
+</footer>
 </body>
 </html>

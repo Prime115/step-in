@@ -43,7 +43,7 @@ h2 {
 }
 .navboard:hover  {
     background-color: rgba(30, 30, 30, 0.8);
-    filter: drop-shadow(0 0 0.41vw #000000) blur(2);
+    filter: drop-shadow(0 0 0.41vw #000000);
 
 
 }
@@ -436,9 +436,6 @@ body#home .herotext {
 }
 .symbol {
     font-size: 3vw;
-    font-weight: 0;
-
-
 }
 
 #sida4 {
@@ -1361,7 +1358,7 @@ body#bli-medlem #sida2{
     }
     .navboard:hover  {
         background-color: rgba(30, 30, 30, 0.8);
-        filter: drop-shadow(0 0 0.41vw #000000) blur(2);
+        filter: drop-shadow(0 0 0.41vw #000000);
 
 
 
@@ -2303,7 +2300,8 @@ body#bli-medlem #sida2{
     }
     .blackfade{
 
-        linear-gradient(to bottom, rgba(0,0,0,0)0%, rgba(30,30,30,0.4)10%,rgba(30,30,30,0.9)50%, rgba(30,30,30,1)100%)        width: 100%;
+        linear-gradient(to bottom, rgba(0,0,0,0)0%, rgba(30,30,30,0.4)10%,rgba(30,30,30,0.9)50%, rgba(30,30,30,1)100%);
+        width: 100%;
         height: 14vw;
         position: absolute;
         z-index: 10;
