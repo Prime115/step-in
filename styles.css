@@ -44,8 +44,6 @@ h2 {
 .navboard:hover  {
     background-color: rgba(30, 30, 30, 0.8);
     filter: drop-shadow(0 0 0.41vw #000000);
-
-
 }
 .navboard button {
     transition: all 0.3s;
@@ -327,7 +325,6 @@ body#home .herotext {
 .goActive {
     background-color: #293844;
     margin:7.8vw 5vw;
-
     height:50.4vw;
     border-radius: 1.56vw;
     display: flex;
@@ -546,12 +543,12 @@ footer{
     width: 7vw;
 }
 
-.fb {
+#fb {
     font-size: 3vw;
     padding-top: 0.2vw;
     font-weight: 400;
 }
-.ig{
+#ig{
     font-size: 3.5vw;
 }
 .APP {
@@ -559,7 +556,7 @@ footer{
 }
 
 #tränasida2 {
-    height: 169vw;
+    height: 150vw;
 }
 .träningsformer {
     display: grid;
@@ -1157,15 +1154,12 @@ body#bli-medlem #sida2{
     height:100vw;
 }
 .blackfade{
-
     background: linear-gradient(to bottom, rgba(0,0,0,0)0%, rgba(30,30,30,0.25)15%, rgba(30,30,30,0.50)25%, rgba(30,30,30,0.9)50%, rgba(30,30,30,1)100%);
     width: 100%;
     height: 14vw;
     position: absolute;
     z-index: 10;
     bottom: 0;
-
-
 }
 
 .del1{
@@ -1183,7 +1177,7 @@ body#bli-medlem #sida2{
     height: 100%;
 }
 .del1 form{
-
+    height: 100%;
 }
 .sökanläggning{
     width:60%;
@@ -1624,18 +1618,14 @@ body#bli-medlem #sida2{
     }
 
     .cards {
-        display: grid;
         grid-template-areas:
-    ". a ."
-    ". b ."
-    ". c .";
+                ". a ."
+                ". b ."
+                ". c .";
         grid-template-rows: repeat(3,118.65vw) ;
         grid-template-columns:0.1fr 1fr 0.1fr;;
         height: 359vw;
         grid-row-gap: 5vw;
-        justify-content: center;
-
-        padding:0;
     }
     .card{
         transition: all 0.3s ease-in-out;
@@ -2395,11 +2385,7 @@ body#bli-medlem #sida2{
 
     .del1{
         height: 150vw;
-
         border-bottom: 0.01vw dashed rgba(240, 240, 240, 1);
-    }
-    .del1 form{
-        height: 100%;
     }
     .del1-grid{
         display: grid;
@@ -2408,7 +2394,6 @@ body#bli-medlem #sida2{
         grid-template-rows: 1fr 0.2fr;
         height: 100%;
     }
-
     .sökanläggning{
         width:80vw;
         padding:0;
@@ -2421,8 +2406,6 @@ body#bli-medlem #sida2{
         font-weight: 600;
         margin-bottom: 10vw;
         justify-self: center;
-
-
     }
     .sökanläggning input{
         height:10vw;
@@ -2443,7 +2426,6 @@ body#bli-medlem #sida2{
         width: 100%;
         padding:0;
         height: 20vw;
-
     }
     .dropdown-list li {
         padding: 3vw;
