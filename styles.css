@@ -2325,21 +2325,28 @@ body#bli-medlem #sida2{
         border-radius: 0;
     }
     .aboutgym h2{
-
+        justify-self: center;
         font-size: 9vw;
+        padding:0;
+        margin-bottom: 0;
     }
     body.thegyms .herotext{
         top:60vw;
     }
     body.thegyms #sida2 {
-        height: 115vw;
+        height: 130vw;
         margin-top:180vw;
     }
     body.thegyms #sida3 {
         height:56vw;
     }
     .abouttext{
-
+        grid-template-areas:
+                "a"
+                "b"
+                "c";
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
     }
     .gymvidplace{
         width:100%;
@@ -2537,7 +2544,36 @@ body#bli-medlem #sida2{
         background-color: #ed8606;
         color: #293844;
 
-
     }
+    .erbjudanden{
+
+        justify-self: center;
+        align-content: center;
+        padding:0;
+    }
+    .erbjudanden li{
+        font-size: 3vw;
+        text-align: center;
+    }
+    .kolumn2{
+        align-self: center;
+        border-left: none;
+        border-right:none;
+        border-bottom: 0.6vw solid #293844;
+        border-top: 0.6vw solid #293844;
+        padding: 2.7vw 0;
+        height: 80%;
+    }
+    .kolumn2 p{
+        white-space: pre-line;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .kolumn3 p{
+        font-size: 3vw;
+        text-align: center;
+    }
+
 }
 
