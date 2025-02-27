@@ -51,7 +51,7 @@ h2 {
 .navboard #logo{
     transition: all 0.3s;
 }
-.navboard:hover button {
+.navboard:hover .orangeButton {
     background-color: #ED8606;
 }
 
@@ -71,9 +71,27 @@ filter:none;
  #logo img {
      height:4.68vw;
  }
+.logga-in {
+    background:none;
+    border:none;
+    transition: all 0.3s;
+}
+.logga-in:hover{
+    transform: none;
+    border:none;
+    color: #ED8606;
+}
+#logga-inRuta {
+    display: none;
+    background: #1E1E1E;
+    height: 10vw;
+    position: relative;
+    width: 10vw;
 
 
-.Navlist a {
+}
+
+.Navlist a, .logga-in {
     Font-family: Montserrat, arial, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -429,7 +447,7 @@ body#home .herotext {
 }
 
 #sida4 {
-    height: 27vw;
+    height: 22vw;
 }
 .kontaktaOss{
     display: grid;
@@ -1061,7 +1079,7 @@ body.thegyms #sida2 {
     top:-60vw;
 }
 body.thegyms #sida3 {
-    height:54vw;
+    height:45vw;
 
 
 }
@@ -1126,11 +1144,11 @@ body.thegyms #sida3 {
 
 .gymvidplace{
     display:flex;
-    width:75%;
+    width:60vw;
     justify-self: center;
     margin-top: 3vw;
     box-shadow:0 0 0.2vw rgba(0, 0, 0, 0.50);
-    height: 42vw;
+    height: 34vw;
 }
 .gymvideo {
     width: 100%;
