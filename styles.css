@@ -14,11 +14,24 @@ header{
     background: transparent;
     z-index: 1000;
     top:0;
+
 }
+
 .navboard {
     display: flex;
     justify-content: space-between;
     transition: all 0.3s;
+}
+header.visa {
+    background-color: #171717;
+    filter: drop-shadow(0 0 0.41vw #000000);
+    transition: all 0.1s;
+}
+header.visa #logo {
+    filter:none;
+}
+header.visa .orangeButton{
+    background-color: #ed8606;
 }
 * {
     color: white;
@@ -751,7 +764,7 @@ footer{
 
 }
 #våragym-sida2 {
-    height:101.2vw;
+    height:98.2vw;
 }
 .mobile-searchgym{
     display:none;
@@ -761,8 +774,8 @@ footer{
     display: grid ;
     grid-template-areas: ". a b .";
     grid-template-columns: 5.4vw 44.6vw 44.6vw 5.4vw;
-    height: 60%;
-    margin-top: 0;
+
+    margin-top: 3vw;
 }
 #search {
     grid-area: a;
@@ -773,6 +786,7 @@ footer{
     height: 42vw;
 
 }
+
 .searchcontainer h2 {
 
     color: #293844;
@@ -996,7 +1010,6 @@ footer{
 #map{
     grid-area: b;
     height:100%;
-    margin-top:3vw;
 }
 body.thegyms #hero{
 

@@ -51,3 +51,17 @@ document.querySelectorAll('.gym').forEach((gym) => {
 
         })
 })
+//-------------------------------
+
+//ändra skroll funktion
+
+let header = document.querySelector('header');
+
+window.addEventListener("scroll", function () {
+        console.log("Scroll position:", window.scrollY);
+        if (window.scrollY > 0.87* window.innerHeight) {
+                header.classList.add("visa");
+        } else {
+                header.classList.remove("visa");
+        }
+});
