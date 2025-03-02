@@ -17,6 +17,8 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
             integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
             crossorigin=""></script>
+    <script src="index.js" defer></script>
+
 </head>
 <body id="våra-gym">
 <header >
@@ -40,10 +42,11 @@
                 <li> <a href="våra-gym.html" > VÅRA GYM</a> </li>
                 <li> <a href="Träna.html"> TRÄNA</a> </li>
                 <li> <a href ="" > FÖRETAG</a> </li>
-                <li> <a href ="" > Logga in</a> </li>
+                <li> <button class="logga-in" id="logga-in">Logga in</button> </li>
                 <li>
-                    <button class=" orangeButton" onclick="window.location.href='bli-medlem.html'">BLI MEDLEM</button>
-
+                    <button class=" orangeButton" onclick="window.location.href='bli-medlem.html'">
+                        BLI MEDLEM
+                    </button>
                 </li>
             </ul>
         </div>
@@ -51,6 +54,13 @@
 
 </header>
  <main>
+     <div id="logga-inRuta" class = "logga-inRuta shadow">
+         <form >
+             <input type="email" name="E-post" id="logga-inEpost" placeholder="E-postadress">
+             <input type="password" name="password" id="logga-inPass" placeholder="Password">
+             <input type="submit" value="Logga in" id="logga-inSubmit">
+         </form>
+     </div>
      <section id="hero">
 
          <div class="heroimage">

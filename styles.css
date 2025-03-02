@@ -83,11 +83,62 @@ filter:none;
 }
 #logga-inRuta {
     display: none;
-    background: #1E1E1E;
-    height: 10vw;
-    position: relative;
-    width: 10vw;
+    transition: all 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    transform: translate(0,-10%);
+}
+#logga-inRuta.show {
+    display: block;
+    opacity: 1;
+    transform: translate(0,28%);
+}
 
+
+.logga-inRuta {
+    background: #1E1E1E;
+    height: 18vw;
+    position:fixed;
+    width: 19vw;
+    left: 77vw;
+    top: 0;
+    z-index: 100;
+    border-radius: 1vw;
+
+}
+.logga-inRuta form{
+    display: grid;
+    align-items: center;
+    height: 100%;
+    grid-template-areas: "a""b""c";
+    grid-template-rows: 0.8fr 1fr 0.6fr;
+}
+.logga-inRuta input{
+    border-radius: 0.7vw;
+    border:none;
+    justify-self: center;
+    width: 14vw;
+    height: 2vw;
+    background-color: #E5E5E5;
+    font-size: 0.8vw;
+    font-family: Roboto, sans-serif;
+}
+
+.logga-inRuta #logga-inEpost {
+    grid-area: a;
+    align-self: end;
+
+}
+.logga-inRuta #logga-inPass{
+    grid-area: b;
+    align-self: start;
+    margin:0.4vw;
+}
+.logga-inRuta #logga-inSubmit {
+    grid-area: c;
+    width: 12vw;
+    background-color: #ED8606;
+    font-size: 0.9vw;
+    text-transform: uppercase;
 
 }
 
