@@ -512,6 +512,16 @@ body#home .herotext {
     background-color: #F0F0F0;
 
 }
+.appear {
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(1vw);
+}
+.appear.inView {
+    opacity: 1;
+    transform:none;
+
+}
 .kontaktaOss h4{
     font-weight: 400;
     color: #293844;
@@ -810,12 +820,14 @@ footer{
 .cardinfo{
    display:contents;
 }
-.gym:active{
+.gym.active{
     background-color: #f0f0f0;
 }
-.gym:active #bemanningstider {
+.gym.active .bemanningstider {
     border-color: #ffffff;
 }
+
+
 .läsmer {
     grid-area: c;
     padding-right: 1.1vw;
@@ -2117,12 +2129,8 @@ body#bli-medlem #sida2{
         grid-template-rows: repeat(4,1fr) ;
     }
 
-    .gym:active{
-        background-color: #f0f0f0;
-    }
-    .gym:active #bemanningstider {
-        border-color: #ffffff;
-    }
+
+
     .läsmer {
         grid-area: d;
         padding-right: 1.1vw;
@@ -2202,7 +2210,7 @@ body#bli-medlem #sida2{
         border-bottom: 0.2vw solid #293844;
         padding:0;
     }
-    .gym:active .symbolcontainer {
+    .gym.active .symbolcontainer {
         border-color: #FFFFFF;
     }
 

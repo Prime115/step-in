@@ -1,5 +1,5 @@
+//kod för "logga in" rutan
 let loggaInCounter = 0;
-
 const loggaInRuta = function () {
         let loggaIn = document.getElementById("logga-inRuta");
         if(loggaInCounter %2 === 0) {
@@ -20,3 +20,34 @@ const loggaInRuta = function () {
 }
 document.getElementById('logga-in').addEventListener('click',loggaInRuta);
 
+//--------------------------------------------------------------------------------------------------
+//kod för fade in animation
+let appear = document.querySelectorAll('.appear');
+let cb = function (entries) {
+        entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                        entry.target.classList.add('inView')
+                } else {
+                        entry.target.classList.remove('inView');
+                }
+        });
+}
+const io =  new IntersectionObserver(cb);
+for(let i = 0; i < appear.length; ++i) {
+        io.observe(appear[i]);
+}
+//------------------------------------------------------------------------
+//kod för våra gym korten
+let activeGym = null;
+document.querySelectorAll('.gym').forEach((gym) => {
+        gym.addEventListener('click', function() {
+                if(activeGym!== this) {
+                if(activeGym) {
+                        activeGym.classList.remove('active');
+                }
+                        this.classList.add('active');
+                        activeGym= this;
+                }
+
+        })
+})
