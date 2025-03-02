@@ -1,22 +1,33 @@
 //kod för "logga in" rutan
 let loggaInCounter = 0;
+let inloggningÖppen = false;
+
 const loggaInRuta = function () {
         let loggaIn = document.getElementById("logga-inRuta");
         if(loggaInCounter %2 === 0) {
                 loggaIn.style.display = 'block';
+                inloggningÖppen = true;
                 setTimeout(() => {
                         loggaIn.classList.add('show');
+                        if  (loggaIn.classList.contains('show')) {
+                                header.classList.add('visa');
+                        }
                 }, 10);
+
         }
         else {
-                loggaIn.classList.toggle('show');
-
+                loggaIn.classList.remove('show');
+                inloggningÖppen = false;
                 setTimeout(() => {
                         loggaIn.style.display = 'none';
+                        if  (loggaIn.classList.contains('show')) {
+                                header.classList.remove('visa');
+                        }
                 }, 300);
 
         }
         loggaInCounter++;
+
 }
 document.getElementById('logga-in').addEventListener('click',loggaInRuta);
 
@@ -58,10 +69,11 @@ document.querySelectorAll('.gym').forEach((gym) => {
 let header = document.querySelector('header');
 
 window.addEventListener("scroll", function () {
-        console.log("Scroll position:", window.scrollY);
-        if (window.scrollY > 0.87* window.innerHeight) {
-                header.classList.add("visa");
-        } else {
-                header.classList.remove("visa");
+        if(!inloggningÖppen) {
+                if (window.scrollY > 0.87* window.innerHeight) {
+                        header.classList.add("visa");
+                } else {
+                        header.classList.remove("visa");
+                }
         }
 });

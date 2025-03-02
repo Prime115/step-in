@@ -99,6 +99,7 @@ filter:none;
     transition: all 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0;
     transform: translate(0,-10%);
+    z-index: 500;
 }
 #logga-inRuta.show {
     display: block;
