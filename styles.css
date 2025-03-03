@@ -43,9 +43,7 @@ header.visa .orangeButton{
 .hamburger {
     cursor:none;
     display: none;
-    font-size: 5vw;
-    border: none;
-    color:white;
+
 }
 
 h2 {
@@ -70,8 +68,10 @@ h2 {
 .navboard:hover #logo {
 filter:none;
 }
+#Navlist-mobile {
+    display: none;
+}
 .Navlist a:hover {
-
     color: #ED8606;
 }
 
@@ -1496,41 +1496,76 @@ body#bli-medlem #sida2{
         cursor:pointer;
         display:block;
         background: none;
-        font-size:9vw;
-        padding:0;
-    }
+        width: 15vw;
+        border: none;
 
+    }
+    .bar {
+        width: 80%;
+        height: 0.6vw;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+        margin: 3vw 0;
+        justify-self: center;
+        transform-origin: 38% 50%;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(2.54vw) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-2.54vw) rotate(-45deg);
+    }
     .Navlist{
-        display:none
+        display:none;
+    }
+    #Navlist-mobile {
+        background-color: #171717;
+        width: 100%;
+        height: 100%;
+        position:fixed;
+        display: none;
+        z-index: 990;
+    }
+    #Navlist-mobile.show{
+        display: grid;
+        grid-template-areas: "."".""a""b""c""d""e"".";
+        grid-template-rows:  0.5fr 0.4fr 0.3fr 0.3fr 0.3fr 0.2fr 0.3fr 1fr;
 
     }
-    .Navlist:active {
-        display:block;
+
+
+    #Navlist-mobile.show #våraGym{
+        grid-area: a;
+        margin-left:15vw
+    }
+    #Navlist-mobile.show #träna{
+        grid-area: b;
+        margin-left:15vw
+
+    }
+    #Navlist-mobile.show #företag {
+        grid-area: c;
+        margin-left:15vw
+
+    }
+    #Navlist-mobile.show #bliMedlem{
+        grid-area: e;
+        margin-left:15vw
+
+    }
+    #Navlist-mobile.show #kontakta{
+        grid-area: d;
+        margin-left:15vw
+
     }
 
     h2 {
         font-family: Roboto, sans-serif;
         font-weight: bold;
         font-size: 2.85vw;
-    }
-    .navboard:hover  {
-        background-color: rgba(30, 30, 30, 0.8);
-        filter: drop-shadow(0 0 0.41vw #000000);
-
-
-
-    }
-
-    .navboard:hover button {
-    background: none
-    }
-
-    .navboard:hover #logo {
-        filter:none;
-    }
-    .Navlist a:hover {
-
-        color: #ED8606;
     }
 
     #logo {
@@ -1542,6 +1577,9 @@ body#bli-medlem #sida2{
     body#home #logo{
         filter:brightness(0.5);
     }
+    body#home #logo.show{
+        filter:none;
+    }
     #logo img {
         height:15vw;
     }
@@ -1551,19 +1589,10 @@ body#bli-medlem #sida2{
         Font-family: Montserrat, arial, sans-serif;
         font-weight: 600;
         text-transform: uppercase;
-
         text-decoration: none;
-        font-size: 1.09vw;
-        transition: all 0.3s;
+        font-size: 8vw;
+        transition: none
 
-    }
-    .Navlist ul{
-        margin-top:1.25vw;
-        margin-bottom: 1.25vw;
-    }
-    .Navlist li {
-        display: inline-block;
-        padding:0 1.4vw;
 
     }
 
@@ -1666,15 +1695,11 @@ body#bli-medlem #sida2{
     }
 
     .Navlist .orangeButton {
-        background: transparent;
-        border-radius:2.34vw;
-        border-color: #D67505;
-        border-style: solid;
-        border-width: thin;
-        height:2.94vw;
-        width: 10.6vw;
-        font-family: Montserrat, arial, sans-serif;
-        font-weight: 600;
+
+        border-radius:4vw;
+        height:17vw;
+        width: 40vw;
+        font-size: 4vw;
 
     }
 

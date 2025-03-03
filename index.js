@@ -76,7 +76,7 @@ window.addEventListener("scroll", function () {
                         homeHeader?.classList.remove("visa");
                 }
                 otherHeaders.forEach(header => {
-                        if (window.scrollY > 0.38 * window.innerHeight) {
+                        if (window.scrollY > 0.37 * window.innerHeight) {
                                 header.classList.add("visa");
                         } else {
                                 header.classList.remove("visa");
@@ -86,3 +86,26 @@ window.addEventListener("scroll", function () {
         }
 
 });
+//-------------------------------------------------------
+
+//jquery navlist hamburger
+$(document).ready(function() {
+        $('.hamburger').click(function () {
+                let $menu = $('#Navlist-mobile')
+                if( $menu.hasClass('show')) {
+                        $menu.animate({right: "-100%"}, 300,function() {
+                                $menu.removeClass('show');
+                        });
+                        $menu.find('a, button').fadeOut(200);
+                        $('.navboard').css('background', 'transparent');
+
+                }
+                else{
+                        $menu.addClass('show').css("right", "-100%").animate({right: "0"}, 300);
+                        $menu.find('a, button').fadeIn(500);
+                        $('.navboard').css('background', '#171717');
+                }
+                $('body#home #logo').toggleClass('show');
+                $('.hamburger').toggleClass('active');
+        })
+})
