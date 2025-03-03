@@ -93,7 +93,7 @@ $(document).ready(function() {
         $('.hamburger').click(function () {
                 let $menu = $('#Navlist-mobile')
                 if( $menu.hasClass('show')) {
-                        $menu.animate({right: "-100%"}, 300,function() {
+                        $menu.animate({right: "-100%"}, 400,function() {
                                 $menu.removeClass('show');
                         });
                         $menu.find('a, button').fadeOut(200);
@@ -101,8 +101,8 @@ $(document).ready(function() {
 
                 }
                 else{
-                        $menu.addClass('show').css("right", "-100%").animate({right: "0"}, 300);
-                        $menu.find('a, button').fadeIn(500);
+                        $menu.addClass('show').css("right", "-100%").animate({right: "0"}, 400);
+                        $menu.find('a, button').css("opacity", "0").fadeTo(1000, 1);
                         $('.navboard').css('background', '#171717');
                 }
                 $('body#home #logo').toggleClass('show');

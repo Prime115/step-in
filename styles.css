@@ -1537,7 +1537,10 @@ body#bli-medlem #sida2{
         grid-template-rows:  0.5fr 0.4fr 0.3fr 0.3fr 0.3fr 0.2fr 0.3fr 1fr;
 
     }
+    #Navlist-mobile a,
+    #Navlist-mobile button {
 
+    }
 
     #Navlist-mobile.show #våraGym{
         grid-area: a;
@@ -1702,6 +1705,7 @@ body#bli-medlem #sida2{
         height:17vw;
         width: 40vw;
         font-size: 4vw;
+        transition: none;
 
     }
 
