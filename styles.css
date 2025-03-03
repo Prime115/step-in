@@ -68,7 +68,7 @@ h2 {
 .navboard:hover #logo {
 filter:none;
 }
-#Navlist-mobile {
+#Navlist-mobile.Navlist {
     display: none;
 }
 .Navlist a:hover {

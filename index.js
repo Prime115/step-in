@@ -76,7 +76,7 @@ window.addEventListener("scroll", function () {
                         homeHeader?.classList.remove("visa");
                 }
                 otherHeaders.forEach(header => {
-                        if (window.scrollY > 0.37 * window.innerHeight) {
+                        if (window.scrollY > 0.38 * window.innerHeight) {
                                 header.classList.add("visa");
                         } else {
                                 header.classList.remove("visa");
