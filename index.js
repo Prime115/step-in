@@ -1,27 +1,27 @@
 //kod för "logga in" rutan
 let loggaInCounter = 0;
-let inloggningÖppen = false;
+let inloggningOpen = false;
 
 const loggaInRuta = function () {
         let loggaIn = document.getElementById("logga-inRuta");
         if(loggaInCounter %2 === 0) {
                 loggaIn.style.display = 'block';
-                inloggningÖppen = true;
+                inloggningOpen = true;
                 setTimeout(() => {
                         loggaIn.classList.add('show');
                         if  (loggaIn.classList.contains('show')) {
-                                header.classList.add('visa');
+                                homeHeader.classList.add('visa');
                         }
                 }, 10);
 
         }
         else {
                 loggaIn.classList.remove('show');
-                inloggningÖppen = false;
+                inloggningOpen= false;
                 setTimeout(() => {
                         loggaIn.style.display = 'none';
-                        if  (loggaIn.classList.contains('show')) {
-                                header.classList.remove('visa');
+                        if  (!loggaIn.classList.contains('show')) {
+                                homeHeader.classList.remove('visa');
                         }
                 }, 300);
 
@@ -66,14 +66,23 @@ document.querySelectorAll('.gym').forEach((gym) => {
 
 //ändra skroll funktion
 
-let header = document.querySelector('header');
-
+let homeHeader = document.querySelector('body#home header');
+let otherHeaders = document.querySelectorAll('header:not(body#home header)');
 window.addEventListener("scroll", function () {
-        if(!inloggningÖppen) {
+        if(!inloggningOpen) {
                 if (window.scrollY > 0.87* window.innerHeight) {
-                        header.classList.add("visa");
+                        homeHeader?.classList.add("visa");
                 } else {
-                        header.classList.remove("visa");
+                        homeHeader?.classList.remove("visa");
                 }
+                otherHeaders.forEach(header => {
+                        if (window.scrollY > 0.38 * window.innerHeight) {
+                                header.classList.add("visa");
+                        } else {
+                                header.classList.remove("visa");
+                        }
+                });
+
         }
+
 });
