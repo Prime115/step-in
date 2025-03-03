@@ -189,7 +189,7 @@ body#anderstorp #hero{
     background-size: cover;
     background-position: center;
 }
-body#träna #hero{
+body#tränaPage #hero{
     background-image: url('images/Träna.jpg');
     background-size: cover;
     background-position-y: 40%;
@@ -1505,7 +1505,7 @@ body#bli-medlem #sida2{
         height: 0.6vw;
         transition: all 0.3s ease-in-out;
         background-color: white;
-        margin: 3vw 0;
+        margin: 1vw 0;
         justify-self: center;
         transform-origin: 38% 50%;
     }
@@ -1605,12 +1605,12 @@ body#bli-medlem #sida2{
         object-fit: cover;
 
     }
-    body#träna #hero{
+    body#tränaPage #hero{
         background-image: url('images/Träna.jpg');
         background-size: cover;
         background-position-y: 40%;
     }
-    body#träna #hero .HeaderText {
+    body#tränaPage #hero .HeaderText {
         font-size: 8vw;
         font-weight: 600;
         margin-left: 10vw;
