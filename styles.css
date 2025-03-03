@@ -1496,8 +1496,10 @@ body#bli-medlem #sida2{
         cursor:pointer;
         display:block;
         background: none;
-        width: 15vw;
+        width: 17vw;
         border: none;
+        height: 10vw;
+        align-self: center;
 
     }
     .bar {
@@ -1505,9 +1507,9 @@ body#bli-medlem #sida2{
         height: 0.6vw;
         transition: all 0.3s ease-in-out;
         background-color: white;
-        margin: 1vw 0;
-        justify-self: center;
-        transform-origin: 38% 50%;
+        margin: 2vw 0;
+
+        transform-origin: 50% 50%;
     }
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(2.54vw) rotate(45deg);
