@@ -65,11 +65,18 @@ document.querySelectorAll('.gym').forEach((gym) => {
 //-------------------------------
 
 //ändra skroll funktion
-
+let treshhold = 0;
 let homeHeader = document.querySelector('body#home header');
 let otherHeaders = document.querySelectorAll('header:not(body#home header)');
 window.addEventListener("scroll", function () {
+        if(window.matchMedia("(max-width: 500px)").matches) {
+                treshhold =0.5*window.innerHeight;
+        }
+        else {
+                treshhold =0.87*window.innerHeight;
+        }
         if(!inloggningOpen) {
+
                 if (window.scrollY > 0.87* window.innerHeight) {
                         homeHeader?.classList.add("visa");
                 } else {
