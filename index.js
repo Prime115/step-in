@@ -65,25 +65,34 @@ document.querySelectorAll('.gym').forEach((gym) => {
 //-------------------------------
 
 //ändra skroll funktion
-let treshhold = 0;
+let threshold = 0;
 let homeHeader = document.querySelector('body#home header');
 let otherHeaders = document.querySelectorAll('header:not(body#home header)');
-window.addEventListener("scroll", function () {
+
+let updateThreshold = function(){
         if(window.matchMedia("(max-width: 500px)").matches) {
-                treshhold =0.5*window.innerHeight;
+                threshold =0.28*window.innerHeight;
         }
         else {
-                treshhold =0.87*window.innerHeight;
+                threshold =0.87*window.innerHeight;
         }
-        if(!inloggningOpen) {
+};
+updateThreshold();
+window.addEventListener('resize',updateThreshold);
 
-                if (window.scrollY > 0.87* window.innerHeight) {
-                        homeHeader?.classList.add("visa");
+window.addEventListener("scroll", function () {
+
+
+        if(!inloggningOpen) {
+                let scrollTop = window.scrollY;
+
+                if (scrollTop >threshold) {
+                        homeHeader.classList.add("visa");
                 } else {
-                        homeHeader?.classList.remove("visa");
+                        homeHeader.classList.remove("visa");
                 }
                 otherHeaders.forEach(header => {
-                        if (window.scrollY > 0.172 * window.innerWidth) {
+                        if (scrollTop > 0.172 * window.innerWidth) {
                                 header.classList.add("visa");
                         } else {
                                 header.classList.remove("visa");

@@ -51,6 +51,7 @@ h2 {
     font-weight: bold;
     font-size: 2.85vw;
 }
+
 .navboard:hover  {
     background-color: rgba(30, 30, 30, 0.8);
     filter: drop-shadow(0 0 0.41vw #000000);
@@ -1472,6 +1473,13 @@ body#bli-medlem #sida2{
         position: fixed;
         background:transparent;
     }
+    body#home header.visa {
+        background-color: #171717;
+        filter: drop-shadow(0 0 0.41vw #000000);
+    }
+    body#home header.visa #logo {
+        filter:none;
+    }
     .navboard {
         height: 100%;
         align-content: center;
@@ -1534,40 +1542,41 @@ body#bli-medlem #sida2{
         display: none;
         z-index: 990;
     }
-    #Navlist-mobile.show{
-        display: grid;
-        grid-template-areas: "."".""a""b""c""d""e"".";
-        grid-template-rows:  0.5fr 0.4fr 0.3fr 0.3fr 0.3fr 0.2fr 0.3fr 1fr;
-
+    #Navlist-mobile.show {
+        display: block;
     }
-    #Navlist-mobile a,
-    #Navlist-mobile button {
+    #Navlist-mobile .grid{
+        display: grid;
+        grid-template-areas: ".""a""b""c""d""e";
+        grid-template-rows:  0.7fr 0.15fr 0.15fr 0.15fr 0.1fr 0.2fr;
+        height: 75%;
 
     }
 
     #Navlist-mobile.show #våraGym{
         grid-area: a;
-        margin-left:15vw
+        margin-left:20vw;
     }
     #Navlist-mobile.show #träna{
         grid-area: b;
-        margin-left:15vw
+        margin-left:20vw;
 
     }
     #Navlist-mobile.show #företag {
         grid-area: c;
-        margin-left:15vw
+        margin-left:20vw;
 
     }
     #Navlist-mobile.show #bliMedlem{
         grid-area: e;
-        margin-left:15vw
+        margin-left:20vw;
 
     }
     #Navlist-mobile.show #kontakta{
         grid-area: d;
-        margin-left:15vw
-
+        margin-left:20vw;
+        width: 70%;
+        height: 70%;
     }
 
     h2 {
@@ -1598,10 +1607,10 @@ body#bli-medlem #sida2{
         font-weight: 600;
         text-transform: uppercase;
         text-decoration: none;
-        font-size: 8vw;
-        transition: none
-
-
+        font-size: 6vw;
+        transition: none;
+        width: 50%;
+        height: 60%;
     }
 
     #hero video {
@@ -1705,9 +1714,9 @@ body#bli-medlem #sida2{
     .Navlist .orangeButton {
 
         border-radius:4vw;
-        height:17vw;
-        width: 40vw;
-        font-size: 4vw;
+        height:12vw;
+        width: 34vw;
+        font-size: 3vw;
         transition: none;
 
     }
