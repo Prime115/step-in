@@ -1022,7 +1022,14 @@ footer{
     grid-area: b;
     height:100%;
     z-index: 2;
+    display: grid;
+    grid-template-areas:"a";
 }
+#map{
+    grid-area: a;
+    height: 95%;
+}
+
 body.thegyms #hero{
 
     height:45.73vw;
