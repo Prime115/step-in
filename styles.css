@@ -1565,7 +1565,7 @@ body#bli-medlem #sida2{
         height: 75%;
         align-items: center;
         justify-content: left;
-
+        margin-top: 20vw;
     }
 
     #Navlist-mobile.show #våraGym{
