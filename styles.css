@@ -1018,7 +1018,7 @@ footer{
 .sjukgymnast{
     grid-area:e;
 }
-#map{
+.map{
     grid-area: b;
     height:100%;
     z-index: 2;
@@ -1561,7 +1561,7 @@ body#bli-medlem #sida2{
     #Navlist-mobile .grid{
         display: grid;
         grid-template-areas: ".""a""b""c""d""e""f";
-        grid-template-rows:  0.7fr 0.15fr 0.15fr 0.15fr 0.15fr 0.1fr 0.2fr;
+        grid-template-rows:  0.7fr 0.2fr 0.2fr 0.2fr 0.2fr 0.15fr 0.2fr;
         height: 75%;
         align-items: center;
         justify-content: left;
@@ -1583,7 +1583,7 @@ body#bli-medlem #sida2{
         margin-left:20vw;
 
     }
-    #Navlist-mobile.show #abonnemang {
+    #Navlist-mobile.show #abonnemang2 {
         grid-area: d;
         margin-left:20vw;
     }
@@ -1631,6 +1631,9 @@ body#bli-medlem #sida2{
         transition: none;
         width: 50%;
         height: 60%;
+    }
+    .Navlist a:hover {
+        color: white;
     }
 
     #hero video {
@@ -2373,13 +2376,14 @@ body#bli-medlem #sida2{
     }
 
 
-    #map{
+    .map{
         grid-area: a;
         height: 100vw;
+
         display: grid;
         grid-template-areas:"a""b"
     }
-    .map{
+    #map{
         grid-area: b;
         height: 71.8vw;
 
