@@ -1577,31 +1577,31 @@ body#bli-medlem #sida2{
 
     #Navlist-mobile.show #våraGym{
         grid-area: a;
-        margin-left:20vw;
+        margin-left:15vw;
         width: 100%;
     }
     #Navlist-mobile.show #träna{
         grid-area: b;
-        margin-left:20vw;
+        margin-left:15vw;
 
     }
     #Navlist-mobile.show #företag {
         grid-area: c;
-        margin-left:20vw;
+        margin-left:15vw;
 
     }
     #Navlist-mobile.show #abonnemang2 {
         grid-area: d;
-        margin-left:20vw;
+        margin-left:15vw;
     }
     #Navlist-mobile.show #bliMedlem{
         grid-area: f;
-        margin-left:20vw;
+        margin-left:15vw;
 
     }
     #Navlist-mobile.show #kontakta{
         grid-area: e;
-        margin-left:20vw;
+        margin-left:15vw;
         width: 70%;
         height: 70%;
     }

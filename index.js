@@ -4,16 +4,16 @@ let inloggningOpen = false;
 
 const loggaInRuta = function () {
         let loggaIn = document.getElementById("logga-inRuta");
+        let headers =document.querySelectorAll('header');
         if(loggaInCounter %2 === 0) {
                 loggaIn.style.display = 'block';
                 inloggningOpen = true;
                 setTimeout(() => {
                         loggaIn.classList.add('show');
                         if  (loggaIn.classList.contains('show')) {
-                                homeHeader.classList.add('visa');
+                                headers.forEach(header => header.classList.add('visa'));
                         }
                 }, 10);
-
         }
         else {
                 loggaIn.classList.remove('show');
@@ -21,15 +21,14 @@ const loggaInRuta = function () {
                 setTimeout(() => {
                         loggaIn.style.display = 'none';
                         if  (!loggaIn.classList.contains('show')) {
-                                homeHeader.classList.remove('visa');
+                                headers.forEach(header => header.classList.remove('visa'));
                         }
                 }, 300);
-
         }
         loggaInCounter++;
-
 }
 document.getElementById('logga-in').addEventListener('click',loggaInRuta);
+
 
 //--------------------------------------------------------------------------------------------------
 //kod för fade in animation
@@ -37,7 +36,10 @@ let appear = document.querySelectorAll('.appear');
 let cb = function (entries) {
         entries.forEach(entry => {
                 if(entry.isIntersecting) {
-                        entry.target.classList.add('inView')
+                        setTimeout( () => {
+                                entry.target.classList.add('inView')
+                        }, 100)
+
                 } else {
                         entry.target.classList.remove('inView');
                 }
@@ -92,13 +94,15 @@ window.addEventListener("scroll", function () {
                 }
 
         }
-        otherHeaders.forEach(header => {
-                if (scrollTop > 0.172 * window.innerWidth) {
-                        header.classList.add("visa");
-                } else {
-                        header.classList.remove("visa");
-                }
-        });
+        if(!inloggningOpen) {
+                otherHeaders.forEach(header => {
+                        if (scrollTop > 0.172 * window.innerWidth) {
+                                header.classList.add("visa");
+                        } else {
+                                header.classList.remove("visa");
+                        }
+                });
+        }
 
 });
 //-------------------------------------------------------
