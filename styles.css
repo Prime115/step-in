@@ -16,7 +16,17 @@ header{
     top:0;
 
 }
-
+#draggable{
+    position: absolute;
+    cursor: grab;
+    height: 80px;
+    width: 112px;
+    background-image: url("./images/dumbell.png");
+    background-size: cover;
+    background-position: center;
+    margin-left: 47%;
+    margin-top: 09%;
+}
 .navboard {
     display: flex;
     justify-content: space-between;
@@ -1461,6 +1471,9 @@ body#bli-medlem #sida2{
     br{
         display: none;
 }
+    #draggable {
+        display: none;
+    }
 
     header{
         height: 20vw;
@@ -1547,15 +1560,18 @@ body#bli-medlem #sida2{
     }
     #Navlist-mobile .grid{
         display: grid;
-        grid-template-areas: ".""a""b""c""d""e";
-        grid-template-rows:  0.7fr 0.15fr 0.15fr 0.15fr 0.1fr 0.2fr;
+        grid-template-areas: ".""a""b""c""d""e""f";
+        grid-template-rows:  0.7fr 0.15fr 0.15fr 0.15fr 0.15fr 0.1fr 0.2fr;
         height: 75%;
+        align-items: center;
+        justify-content: left;
 
     }
 
     #Navlist-mobile.show #våraGym{
         grid-area: a;
         margin-left:20vw;
+        width: 100%;
     }
     #Navlist-mobile.show #träna{
         grid-area: b;
@@ -1567,13 +1583,17 @@ body#bli-medlem #sida2{
         margin-left:20vw;
 
     }
+    #Navlist-mobile.show #abonnemang {
+        grid-area: d;
+        margin-left:20vw;
+    }
     #Navlist-mobile.show #bliMedlem{
-        grid-area: e;
+        grid-area: f;
         margin-left:20vw;
 
     }
     #Navlist-mobile.show #kontakta{
-        grid-area: d;
+        grid-area: e;
         margin-left:20vw;
         width: 70%;
         height: 70%;
@@ -1607,7 +1627,7 @@ body#bli-medlem #sida2{
         font-weight: 600;
         text-transform: uppercase;
         text-decoration: none;
-        font-size: 6vw;
+        font-size: 7vw;
         transition: none;
         width: 50%;
         height: 60%;
@@ -1714,8 +1734,8 @@ body#bli-medlem #sida2{
     .Navlist .orangeButton {
 
         border-radius:4vw;
-        height:12vw;
-        width: 34vw;
+        height:15vw;
+        width: 38vw;
         font-size: 3vw;
         transition: none;
 

@@ -71,35 +71,34 @@ let otherHeaders = document.querySelectorAll('header:not(body#home header)');
 
 let updateThreshold = function(){
         if(window.matchMedia("(max-width: 500px)").matches) {
-                threshold =0.28*window.innerHeight;
+                threshold =0.6 * window.innerWidth;
         }
         else {
-                threshold =0.87*window.innerHeight;
+                threshold = 0.398 * window.innerWidth;
         }
 };
 updateThreshold();
 window.addEventListener('resize',updateThreshold);
 
 window.addEventListener("scroll", function () {
+        let scrollTop = window.scrollY;
 
-
-        if(!inloggningOpen) {
-                let scrollTop = window.scrollY;
+        if(homeHeader && !inloggningOpen) {
 
                 if (scrollTop >threshold) {
                         homeHeader.classList.add("visa");
                 } else {
                         homeHeader.classList.remove("visa");
                 }
-                otherHeaders.forEach(header => {
-                        if (scrollTop > 0.172 * window.innerWidth) {
-                                header.classList.add("visa");
-                        } else {
-                                header.classList.remove("visa");
-                        }
-                });
 
         }
+        otherHeaders.forEach(header => {
+                if (scrollTop > 0.172 * window.innerWidth) {
+                        header.classList.add("visa");
+                } else {
+                        header.classList.remove("visa");
+                }
+        });
 
 });
 //-------------------------------------------------------
@@ -124,4 +123,11 @@ $(document).ready(function() {
                 $('body#home #logo').toggleClass('show');
                 $('.hamburger').toggleClass('active');
         })
+})
+//---------------------
+
+//draggable, fördjupningsuppgift
+
+document.addEventListener("DOMContentLoaded", function() {
+        $('#draggable').draggable();
 })
