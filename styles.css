@@ -19,13 +19,31 @@ header{
 #draggable{
     position: absolute;
     cursor: grab;
-    height: 80px;
-    width: 112px;
+    height: 6.25vw;
+    width: 8.75vw;
     background-image: url("./images/dumbell.png");
     background-size: cover;
     background-position: center;
-    margin-left: 47%;
-    margin-top: 09%;
+
+    z-index:10;
+}
+#dropzone{
+    position: absolute;
+    width: 20vw;
+    height: 12vw;
+    background-color: rgba(0,0,0, 0);
+    margin-top:-8vw;
+    margin-left: -3vw;
+
+}
+#droppable{
+    height: 13.14vw;
+    width: 15vw;
+    position: relative;
+    left: 45%;
+    top: 3%;
+    display: flex;
+    z-index: 5;
 }
 .navboard {
     display: flex;

@@ -132,6 +132,19 @@ $(document).ready(function() {
 
 //draggable, fördjupningsuppgift
 
-document.addEventListener("DOMContentLoaded", function() {
-        $('#draggable').draggable();
+$(document).ready(function() {
+        $('#draggable').draggable({
+        });
+        $('#dropzone').droppable({
+                accept:'#draggable',
+
+                drop:function(event, ui){
+                $(ui.draggable).animate({
+                        top: $(this).offset().top +0.08 *window.innerWidth,
+                        left: $(this).offset().left +0.052 *window.innerWidth,
+                }, 300);
+
+                }
+
+        })
 })
