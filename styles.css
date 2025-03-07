@@ -808,7 +808,7 @@ footer{
 }
 #search {
     grid-area: a;
-    margin-top: 5vw;
+    margin-top: 1vw;
 }
 .searchcontainer{
     width: 40.8vw;
@@ -1503,7 +1503,7 @@ body#bli-medlem #sida2{
     header{
         height: 20vw;
         width:100vw;
-        position: sticky;
+        position: fixed;
         background-color: #1E1E1E;
 
     }
